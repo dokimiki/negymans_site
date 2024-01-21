@@ -1,11 +1,7 @@
 {
     "images": {
-        "unoptimized": true,
         "loader": "custom",
         "loaderFile": "/src/libs/imageLoader.ts"
-    },
-    "experimental": {
-        "images": { "unoptimized": true }
     },
     "basePath": "/negymans_site"
 }
