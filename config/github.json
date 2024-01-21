@@ -1,7 +1,7 @@
 {
     "images": {
         "loader": "custom",
-        "loaderFile": "/src/libs/imageLoader.ts"
+        "loaderFile": "/src/libs/image/githubPagesImgLoader.ts"
     },
     "basePath": "/negymans_site"
 }
