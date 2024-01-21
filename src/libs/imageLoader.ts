@@ -1,3 +1,3 @@
-export default function imageLoader(src: string): string {
-    return `/${process.env.BASE_PATH}/${src}`;
+export default function imageLoader(src: string, width: number, quality?: number): string {
+    return `/${process.env.BASE_PATH || "test"}/${src}`;
 }
