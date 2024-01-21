@@ -1,3 +1,6 @@
 export default function imageLoader({ src, width, quality }: { src: string; width: number; quality?: number }): string {
-    return `/${process.env.BASE_PATH || "test"}/${src}`;
+    if (src.startsWith("/")) {
+        return `/${process.env.NEXT_PUBLIC_BASE_PATH}${src}`;
+    }
+    return src;
 }
