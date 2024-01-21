@@ -1,5 +1,9 @@
 {
-    "images": { "unoptimized": true },
+    "images": {
+        "unoptimized": true,
+        "loader": "custom",
+        "loaderFile": "/src/libs/imageLoader.ts"
+    },
     "experimental": {
         "images": { "unoptimized": true }
     },
