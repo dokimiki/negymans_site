@@ -19,7 +19,6 @@
         "isolatedModules": true,
         "jsx": "preserve",
         "incremental": true,
-        "jsxImportSource": "@emotion/react",
         "plugins": [
             {
                 "name": "next"
