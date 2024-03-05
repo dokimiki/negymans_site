@@ -1,7 +1,15 @@
+import About from "./About";
+import FirstView from "./FirstView";
+import News from "./News";
+import Games from "./Games"
+
 export default function Home() {
-  return (
-    <main>
-      <a href="https://github.com/dokimiki/negymans_site/releases/download/v0.1.0/GOT_SIMULATOR.zip">GOT SIMULATORインストールはこちら(Windows 64bit)</a>
-    </main>
-  );
+    return (
+        <main>
+            <FirstView />
+            <News />
+            <About />
+            <Games />
+        </main>
+    );
 }
