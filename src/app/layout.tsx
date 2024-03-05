@@ -18,11 +18,20 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body className={inter.className}>
-        <header>
-          this is header
+        <header className="glass-bg sticky inset-0 flex flex-row justify-between">
+          <div>NEGYMANS</div>
+          <div className="flex flex-row">
+            <nav>
+              <ul className="flex flex-row">
+                <li>NEGYMANSとは</li>
+                <li>Contents</li>
+              </ul>
+            </nav>
+            <div>三</div>
+          </div>
+
         </header>
         {children}
-        <div className="h-screen">this is footer</div>
         <footer></footer>
       </body>
     </html>
