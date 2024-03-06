@@ -9,3 +9,12 @@
     backdrop-filter: blur(11.3px);
     -webkit-backdrop-filter: blur(11.3px);
 }
+
+.text-blue-bg{
+    /* 文字の後ろについている青色の背景 */
+    display: inline-block;
+    line-height: 1.3em;
+    padding-left:0.06em;
+    padding-right:0.06em;
+    background: #70E5FF;
+}
