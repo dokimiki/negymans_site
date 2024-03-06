@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
 import "./global.scss";
+import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,7 +20,7 @@ export default function RootLayout({
     <html lang="ja">
       <body className={inter.className}>
         <header className="glass-bg sticky inset-0 flex flex-row justify-between">
-          <div>NEGYMANS</div>
+          <div><Image src="/img/NEGYMANS.svg" alt="NEGYMANS" width={100} height={100} /></div>
           <div className="flex flex-row">
             <nav>
               <ul className="flex flex-row">
@@ -29,7 +30,6 @@ export default function RootLayout({
             </nav>
             <div>三</div>
           </div>
-
         </header>
         {children}
         <footer></footer>
