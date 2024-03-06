@@ -1,27 +1,32 @@
 /*widthの標準値*/
-$mainWidth: 600px;
+$mainWidth: 1500px;
+$maxFont: 3.5rem;
 
+/*newsListのスタイル*/
 .list{
         .container {
             width: $mainWidth;
             margin: 0 auto;
+            padding: 50px 0;
             display: flex;
             border-bottom: 1px solid #000; 
             .title {
-                    width: 40%;
-                    text-align: center;
-                    font-size: 1.7rem;
+                margin-left: 40px;
+                    width: 35%;
+                    font-size: $maxFont;
                     font-weight: bold;
                 }
             .rightContent{
-                width: 60%;
+                margin-left: 70px;
+                width: 40%;
                 .explanation {
-                        font-size: 1.2rem;
+                    font-size: $maxFont*0.4;
                     }
             
                 .unContent {
                     display: flex;
-                    justify-content: space-between;
+                    margin-top: 20px;
+                    
             
                     .date {
                         font-size: 1rem;
@@ -29,6 +34,7 @@ $mainWidth: 600px;
                     }
             
                     .url {
+                        margin-left: $mainWidth/4;
                         font-size: 1rem;
                         color: #000;
                     }
