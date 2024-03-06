@@ -1,3 +1,42 @@
-h2 {
-    color: red;
+/*widthの標準値*/
+$mainWidth: 600px;
+
+.list{
+        .container {
+            width: $mainWidth;
+            margin: 0 auto;
+            display: flex;
+            border-bottom: 1px solid #000; 
+            .title {
+                    width: 40%;
+                    text-align: center;
+                    font-size: 1.7rem;
+                    font-weight: bold;
+                }
+            .rightContent{
+                width: 60%;
+                .explanation {
+                        font-size: 1.2rem;
+                    }
+            
+                .unContent {
+                    display: flex;
+                    justify-content: space-between;
+            
+                    .date {
+                        font-size: 1rem;
+                        color: #000;
+                    }
+            
+                    .url {
+                        font-size: 1rem;
+                        color: #000;
+                    }
+                }
+            }
+
+
+            
+        }
 }
+
