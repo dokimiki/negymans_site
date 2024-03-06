@@ -1,9 +1,9 @@
 export default function FirstView() {
     return (
         <div className="catchcopy">
-            <div>subcatchcopy</div>
-            <div>catchcopy</div>
-            <div>catchcopycommentary</div>
+            <div className="text-facing">subcatchcopy</div>
+            <div className="text-blue-bg">catchcopy</div>
+            <div className="text-underline">catchcopycommentary</div>
         </div>
     );
 }
