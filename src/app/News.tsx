@@ -1,6 +1,7 @@
 import React from "react";
 import "./News.scss";
 import "./global.scss";
+import button from "../img/button_arrow.png";
 
 type NewsObject = {
     title: string;
@@ -11,15 +12,17 @@ type NewsObject = {
 // お知らせのコンテンツ表示
 export default function News() {
     return (
-        <div className="News">
-            <h3 className="text-facing">News</h3>
-            <h2 className="text-blue-bg">お知らせ</h2>
-            {newsList()}
+        <div className="news">
+            <div className="heading">
+                <h3 className="text-facing">News</h3>
+                <h2 className="text-blue-bg">お知らせ</h2>
+            </div>
+            {NewsList()}
         </div>
     );
 }
 
-function newsList() {
+function NewsList() {
     // 本来はAPIからデータを取得する(ダミーデータ)
     //お知らせのデータ
     const newsList: NewsObject[] = [
@@ -49,7 +52,7 @@ function newsList() {
                             <div className="unContent">
                                 <p className="date">{n.date}</p>
                                 <a href={n.url} className="url">
-                                    詳細
+                                    <p>→</p>
                                 </a>
                             </div>
                         </div>
