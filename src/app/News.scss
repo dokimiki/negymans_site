@@ -1,0 +1,101 @@
+/*widthの標準値*/
+$mainWidth: 1500px;
+$maxFont: 3.5rem;
+
+/*Newsのスタイル*/
+.news{
+    width: $mainWidth;
+    margin: 0 auto;
+    
+    /*NwesListのスタイル*/
+    .list{
+        .container {
+            padding: 50px 0;
+            display: flex;
+            border-bottom: 1px solid #000; 
+            /*左側のコンテンツのスタイル*/
+            .title {
+                margin-left: 40px;
+                    width: 35%;
+                    font-size: $maxFont;
+                    font-weight: bold;
+                }
+            /*右側のコンテンツのスタイル*/
+            .rightContent{
+                margin-left: 70px;
+                width: 40%;
+                /*お知らせの説明のスタイル*/ 
+                .explanation {
+                    font-size: $maxFont*0.4;
+                    }
+                /*日付・URLのスタイル*/
+                .unContent {
+                    display: flex;
+                    margin-top: 20px;
+                    
+                    /*日付のスタイル*/
+                    .date {
+                        font-size: 1.2rem;
+                        color: #000;
+                    }
+                    /*URLのスタイル*/
+                    .url {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 240px;
+                        height: 48px;
+                        margin-left: $mainWidth/4;
+                        border: 2px solid #000;
+                        border-radius: 50px;
+                        background-color: transparent;
+                        position: relative;
+                        letter-spacing: 0.05em;
+                        font-size: 12px;
+                        transition: initial;
+                        overflow: hidden;
+                        text-decoration: none;
+                        p{
+                            color: #000;
+                            font-weight: bold;
+                            z-index: 1000;
+                            transition: 0.6s ease all;
+                            font-size: 2rem;
+                        }
+                    }
+                    /* ボタンの上にマウスを持ってきたとき */
+                    .url:hover p {
+                        color: #fff;
+                        transition: 0.6s ease all;
+                    }
+
+                    .url:before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        border-radius: 50%;
+                        margin: auto;
+                        width: 60px;
+                        height: 60px;
+                        background: #000;
+                        transform: scale(0);
+                        transition: 0.6s ease all;
+                    }
+
+                    .url:hover:before {
+                        transform: scale(4.2);
+                    }
+                    a:active{
+                        background-color: #2e2e2e;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+
