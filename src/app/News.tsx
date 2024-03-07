@@ -1,5 +1,6 @@
 import React from "react";
 import "./News.scss";
+import "./global.scss";
 
 type NewsObject = {
     title: string;
@@ -7,18 +8,20 @@ type NewsObject = {
     date: string;
     url: string;
 };
-
+// お知らせのコンテンツ表示
 export default function News() {
     return (
         <div className="News">
-            <h2>News</h2>
-            <h1>お知らせ</h1>
+            <h3 className="text-facing">News</h3>
+            <h2 className="text-blue-bg">お知らせ</h2>
             {newsList()}
         </div>
     );
 }
 
 function newsList() {
+    // 本来はAPIからデータを取得する(ダミーデータ)
+    //お知らせのデータ
     const newsList: NewsObject[] = [
         {
             title: "NEGYMANSのWebサイトを公開",
@@ -40,7 +43,7 @@ function newsList() {
             <ul className="list">
                 {newsList.map((n) => (
                     <li key={1} className="container">
-                        <h2 className="title">{n.title}</h2>
+                        <h3 className="title">{n.title}</h3>
                         <div className="rightContent">
                             <p className="explanation">{n.explanation}</p>
                             <div className="unContent">

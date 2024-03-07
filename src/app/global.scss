@@ -17,10 +17,13 @@
     padding-left:0.06em;
     padding-right:0.06em;
     background: #70E5FF;
+    font-size: 4rem;
+    font-weight: bolder;
 }
 
 .text-facing{
     /* 文字を枠線だけにする */
+    font-size: 2rem;
     font-weight: bold;
     color: transparent;
     -webkit-text-stroke: 0.02em #111111;
