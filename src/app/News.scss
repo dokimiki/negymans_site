@@ -13,29 +13,32 @@ $maxFont: 3.5rem;
             padding: 50px 0;
             display: flex;
             border-bottom: 1px solid #000; 
+            /*左側のコンテンツのスタイル*/
             .title {
                 margin-left: 40px;
                     width: 35%;
                     font-size: $maxFont;
                     font-weight: bold;
                 }
+            /*右側のコンテンツのスタイル*/
             .rightContent{
                 margin-left: 70px;
                 width: 40%;
+                /*お知らせの説明のスタイル*/ 
                 .explanation {
                     font-size: $maxFont*0.4;
                     }
-            
+                /*日付・URLのスタイル*/
                 .unContent {
                     display: flex;
                     margin-top: 20px;
                     
-            
+                    /*日付のスタイル*/
                     .date {
                         font-size: 1.2rem;
                         color: #000;
                     }
-            
+                    /*URLのスタイル*/
                     .url {
                         display: flex;
                         align-items: center;
@@ -60,7 +63,7 @@ $maxFont: 3.5rem;
                             font-size: 2rem;
                         }
                     }
-
+                    /* ボタンの上にマウスを持ってきたとき */
                     .url:hover p {
                         color: #fff;
                         transition: 0.6s ease all;
