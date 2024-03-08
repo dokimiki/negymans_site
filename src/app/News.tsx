@@ -13,8 +13,8 @@ export default function News() {
     return (
         <div className="news">
             <div className="heading">
-                <h3 className="text-facing">News</h3>
-                <h2 className="text-blue-bg">お知らせ</h2>
+                <h3 className="text-facing sub-heading">NEWS</h3>
+                <h2 className="text-blue-bg main-heading">お知らせ</h2>
             </div>
             {NewsList()}
         </div>
@@ -51,7 +51,9 @@ function NewsList() {
                             <div className="news-under-content">
                                 <p className="news-date">{n.newsDate}</p>
                                 <a href={n.newsUrl} className="url news-url">
-                                    <p>→</p>
+                                    <picture>
+                                        <img src="./img/button_arrow.png" alt="arrow" />
+                                    </picture>
                                 </a>
                             </div>
                         </div>

@@ -44,8 +44,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 10em;
-    height: 2.6em;
     border: 0.13em solid #111111;
     border-radius: 2em;
     background-color: transparent;
@@ -62,12 +60,18 @@
         transition: 0.6s ease all;
         font-size: 1.8em;
     }
+    img{
+        width: 2vh;
+    }
 }
 
 /* ボタンの上にマウスを持ってきたとき */
-.url:hover p {
+.url:hover p{
     color: #fff;
     transition: 0.6s ease all;
+}
+.url:hover img{
+    filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg) brightness(107%) contrast(101%);
 }
 .url:before {
     content: '';
@@ -78,8 +82,6 @@
     right: 0;
     border-radius: 50%;
     margin: auto;
-    width: 10em;
-    height: 10em;
     background: #111111;
     transform: scale(0);
     transition: 0.8s ease all;
@@ -88,6 +90,6 @@
     transform: scale(4.2);
 }
 a:active {
-    background-color: #2e2e2e;
+    background-color: #555555;
 }
 /************************************************************///ここまで

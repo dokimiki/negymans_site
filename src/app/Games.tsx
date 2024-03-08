@@ -1,3 +1,10 @@
+"use client";
+import React from "react";
+import "./Games.scss";
+//@ts-ignore
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import "@splidejs/splide/dist/css/splide.min.css";
+
 type gameObject = {
     gameTitle: string;
     explanation: string;
@@ -5,55 +12,77 @@ type gameObject = {
     gameImage: string;
 };
 
-// お知らせのコンテンツ表示
+// ゲーム表示
 export default function Games() {
     return (
-        <div className="news">
-            <div className="heading">
-                <h3 className="text-facing">Games</h3>
-                <h2 className="text-blue-bg">作ったゲーム</h2>
+        <div className="games">
+            <div className="games-heading">
+                <h3 className="text-facing game-sub-title">GAMES</h3>
+                <h2 className="text-blue-bg game-title">作ったゲーム</h2>
             </div>
-            {GamesList()}
+            {GameList()}
         </div>
     );
 }
 
-function GamesList() {
+function GameList() {
     const gameList: gameObject[] = [
         {
             gameTitle: "GOTSIMULATOR",
             explanation:
-                "Stet amet ipsum amet diam lorem nulla sit tempor. Molestie suscipit takimata duis sed est elitr duis nulla sit diam stet ipsum et justo suscipit. Lorem vel takimata aliquyam justo et kasd dolor nonummy. Stet invidunt elitr ut dolores exerci ipsum nibh elitr dolor dolor praesent. Magna dignissim rebum voluptua ipsum sit dolor nulla at lorem doming vero tempor no et clita. Amet tempor diam sit aliquyam stet sanctus et gubergren iusto sed sed at amet nibh consequat. Sanctus sadipscing nostrud at feugiat imperdiet illum dolore tempor enim. Kasd feugiat erat wisi erat. Sit lorem vero no velit et facilisis kasd eirmod dolor dolor ",
+                "Stet amet ipsum amet diam lorem nulla sit tempor. Molestie suscipit takimata duis sed est elitr duis nulla sit diam stet ipsum et justo suscipit. Lorem vel takimata aliquyam justo et kasd dolor nonummy. Stet invidunt elitr ut dolores exerci ipsum nibh elitr dolor dolor praesent. Magna dign",
             gameUrl: "https://www.negymans.com/",
-            gameImage: "画像はイメージです",
+            gameImage: "./img/game1.png",
         },
         {
             gameTitle: "Apex Legends",
             explanation: "すばらしいゲーム",
             gameUrl: "https://www.negymans.com/",
-            gameImage: "画像はイメージです",
+            gameImage: "./img/game2.png",
         },
         {
             gameTitle: "松下の分岐型ゲーム",
             explanation: "ゲームを作ったよ",
             gameUrl: "https://www.negymans.com/",
-            gameImage: "画像はイメージです",
+            gameImage: "./img/game3.png",
         },
     ];
     return (
         <>
-            <ul>
+            <Splide
+                options={{
+                    perMove: 1,
+                    gap: 19,
+                    cover: true,
+                    heightRatio: 1,
+                    height: "90vh",
+                    updateOnMove: true,
+                    padding: "15rem",
+                    type: "loop",
+                    focus: "center",
+                }}
+                aria-label="React Splide Example"
+            >
                 {gameList.map((n) => (
-                    <li key={1}>
-                        <p>{n.gameImage}</p>
-                        <h3>{n.gameTitle}</h3>
-
-                        <p>{n.explanation}</p>
-
-                        <a href={n.gameUrl}></a>
-                    </li>
+                    <SplideSlide key={1} className="game-list">
+                        <picture>
+                            <img className="game-img" src={n.gameImage} alt="placeholder" />
+                        </picture>
+                        <div className="games-container">
+                            <h3>{n.gameTitle}</h3>
+                            <div>
+                                <p>{n.explanation}</p>
+                                <a href={n.gameUrl} className="url games-url">
+                                    <p>公式サイトへ</p>
+                                    <picture>
+                                        <img src="./img/button_arrow.png" alt="arrow" />
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                    </SplideSlide>
                 ))}
-            </ul>
+            </Splide>
         </>
     );
 }
