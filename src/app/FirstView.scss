@@ -1,21 +1,23 @@
 .catchcopy{
-    margin-top: 10rem;
+    margin-top: 18rem;
     margin-right: 3rem;
     text-align: right;
+    font-size: 1vw;
+    height: 100vh;
     .sub-catchcopy{
-        margin-right: 2rem;
-        font-size: 3.8rem;
+        margin-right: 0.4em;
+        font-size: 3.4em;
     }
     .main-catchcopy{
-        font-size: 5.8rem;
+        font-size: 5em;
         font-weight: bold;
     }
     .detail-catchcopy{
-        font-size: 1.8rem;
+        font-size: 1.4em;
         font-weight: 480;
         letter-spacing: -1px;
-        line-height: 2rem;
-        padding-top: 2rem;
-        margin-right: 2rem;
+        line-height: 1em;
+        padding-top: 1em;
+        margin-right: 1em;
     }
 }
