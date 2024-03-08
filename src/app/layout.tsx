@@ -24,8 +24,8 @@ export default function RootLayout({
           <div className="flex flex-row">
             <nav>
               <ul className="header-right-content flex flex-row">
-                <li><a className="url" href=""><p>NEGYMANSとは</p></a></li>
-                <li><a className="url" href=""><p>Contents</p></a></li>
+                <li><a className="url negymans-button" href=""><p>NEGYMANSとは</p></a></li>
+                <li><a className="url contents-button" href=""><p>Contents</p></a></li>
               </ul>
             </nav>
             <div>三</div>

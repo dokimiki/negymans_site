@@ -10,14 +10,34 @@
     -webkit-backdrop-filter: blur(6px);
     padding: 1.2rem 0;
     border-bottom: 1px solid #111;
-}
 
-.negymans-rogo{
-    margin-left: 2.4rem;
-}
+    .negymans-rogo{
+        margin-left: 2.4rem;
+    }
 
-.header-right-content{
-    font-size: 6vw;
+    .header-right-content{
+        font-size: 3vw;
+
+
+        .negymans-button{
+            width: 27em;
+            height: 4.8em;
+            margin-right: 2em;
+        }.negymans-button:before{
+            width: 10em;
+            height: 10em;
+        }
+
+
+        .contents-button{
+            width: 18em;
+            height: 4.8em;
+            margin-right: 4em;
+        }.contents-button:before{
+            width: 10em;
+            height: 10em;
+        }
+    }
 }
 
 /* 文字の後ろについている青色の背景 */
@@ -45,7 +65,7 @@
     align-items: center;
     justify-content: center;
     border: 0.13em solid #111111;
-    border-radius: 2em;
+    border-radius: 10em;
     background-color: transparent;
     position: relative;
     letter-spacing: 0.05em;
