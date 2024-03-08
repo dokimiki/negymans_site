@@ -15,22 +15,22 @@ type gameObject = {
 // ゲーム表示
 export default function Games() {
     return (
-        <div className="news">
-            <div className="heading">
-                <h3 className="text-facing">Games</h3>
-                <h2 className="text-blue-bg">作ったゲーム</h2>
+        <div className="games">
+            <div className="games-heading">
+                <h3 className="text-facing game-sub-title">GAMES</h3>
+                <h2 className="text-blue-bg game-title">作ったゲーム</h2>
             </div>
-            {GamesList()}
+            {GameList()}
         </div>
     );
 }
 
-function GamesList() {
+function GameList() {
     const gameList: gameObject[] = [
         {
             gameTitle: "GOTSIMULATOR",
             explanation:
-                "Stet amet ipsum amet diam lorem nulla sit tempor. Molestie suscipit takimata duis sed est elitr duis nulla sit diam stet ipsum et justo suscipit. Lorem vel takimata aliquyam justo et kasd dolor nonummy. Stet invidunt elitr ut dolores exerci ipsum nibh elitr dolor dolor praesent. Magna dignissim rebum voluptua ipsum sit dolor nulla at lorem doming vero tempor no et clita. Amet tempor diam sit aliquyam stet sanctus et gubergren iusto sed sed at amet nibh consequat. Sanctus sadipscing nostrud at feugiat imperdiet illum dolore tempor enim. Kasd feugiat erat wisi erat. Sit lorem vero no velit et facilisis kasd eirmod dolor dolor ",
+                "Stet amet ipsum amet diam lorem nulla sit tempor. Molestie suscipit takimata duis sed est elitr duis nulla sit diam stet ipsum et justo suscipit. Lorem vel takimata aliquyam justo et kasd dolor nonummy. Stet invidunt elitr ut dolores exerci ipsum nibh elitr dolor dolor praesent. Magna dign",
             gameUrl: "https://www.negymans.com/",
             gameImage: "https://placehold.jp/1920x1080.png",
         },
@@ -49,30 +49,37 @@ function GamesList() {
     ];
     return (
         <>
-            <ul>
-                <Splide
-                    options={{
-                        perMove: 1,
-                        gap: 1,
-                        cover: true,
-                        heightRatio: 0.5,
-                        updateOnMove: true,
-                        padding: "15rem",
-                        type: "loop",
-                        focus: "center",
-                        width: "100%",
-                    }}
-                    aria-label="React Splide Example"
-                >
-                    {gameList.map((n) => (
-                        <SplideSlide key={1}>
-                            <picture>
-                                <img className="game-img" src={n.gameImage} alt="placeholder" />
-                            </picture>
-                        </SplideSlide>
-                    ))}
-                </Splide>
-            </ul>
+            <Splide
+                options={{
+                    perMove: 1,
+                    gap: 19,
+                    cover: true,
+                    heightRatio: 1,
+                    height: "90vh",
+                    updateOnMove: true,
+                    padding: "15rem",
+                    type: "loop",
+                    focus: "center",
+                }}
+                aria-label="React Splide Example"
+            >
+                {gameList.map((n) => (
+                    <SplideSlide key={1} className="game-list">
+                        <picture>
+                            <img className="game-img" src={n.gameImage} alt="placeholder" />
+                        </picture>
+                        <div className="games-container">
+                            <h3>{n.gameTitle}</h3>
+                            <div>
+                                <p>{n.explanation}</p>
+                                <a href={n.gameUrl} className="url games-url">
+                                    <p>公式サイトへ →</p>
+                                </a>
+                            </div>
+                        </div>
+                    </SplideSlide>
+                ))}
+            </Splide>
         </>
     );
 }
