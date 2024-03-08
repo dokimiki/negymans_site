@@ -20,12 +20,12 @@ export default function RootLayout({
     <html lang="ja">
       <body className={inter.className}>
         <header className="glass-bg sticky inset-0 flex flex-row justify-between">
-          <div><Image src="/img/NEGYMANS.svg" alt="NEGYMANS" width={100} height={100} /></div>
+          <div><Image className="negymans-rogo" src="/img/NEGYMANS.svg" alt="NEGYMANS" width={270} height={270} /></div>
           <div className="flex flex-row">
             <nav>
-              <ul className="flex flex-row">
-                <li>NEGYMANSとは</li>
-                <li>Contents</li>
+              <ul className="header-right-content flex flex-row">
+                <li><a className="url" href=""><p>NEGYMANSとは</p></a></li>
+                <li><a className="url" href=""><p>Contents</p></a></li>
               </ul>
             </nav>
             <div>三</div>
