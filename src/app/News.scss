@@ -4,43 +4,57 @@ $maxFont: 3.5rem;
 
 /*Newsのスタイル*/
 .news{
-    width: $mainWidth;
+    width: 70em;
     margin: 0 auto;
+    font-size: 1vw;
+
+    .sub-heading{
+        font-size: 2em;
+        margin-bottom: -0.2em;
+        margin-left: 0.8em;
+    }
+
+    .main-heading{
+        font-size: 3.6em;
+        margin-bottom: 1.6em;
+    }
     
     /*NwesListのスタイル*/
     .news-list{
         .news-container {
-            padding: 50px 0;
+            padding: 2.4em 2em;
             display: flex;
-            border-bottom: 1px solid #000; 
+            border-bottom: 0.11em solid #111111; 
             /*左側のコンテンツのスタイル*/
             .news-title {
                 margin-left: 40px;
                     width: 35%;
-                    font-size: $maxFont;
+                    font-size: 2.3em;
                     font-weight: bold;
                 }
             /*右側のコンテンツのスタイル*/
             .news-right-content{
-                margin-left: 70px;
-                width: 40%;
+                margin-left: 4em;
+                width: 42em;
                 /*お知らせの説明のスタイル*/ 
                 .news-explanation {
-                    font-size: $maxFont*0.4;
+                    font-size: 1.2rem;
                     }
                 /*日付・URLのスタイル*/
                 .news-under-content {
                     display: flex;
-                    margin-top: 20px;
+                    margin-top:0.2em;
+                    margin-bottom: 0.2em;
+                    font-size: 5vw;
                     
                     /*日付のスタイル*/
                     .news-date {
                         font-size: 1.2rem;
-                        color: #000;
+                        color: #666666;
                     }
                     /*URLのスタイル*/
                     .news-url{
-                                margin-left: $mainWidth/4;
+                        margin-left: auto;
                     }
                     /*URLのスタイル*/
                     
