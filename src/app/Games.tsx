@@ -2,6 +2,7 @@
 import React from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
+import miku from "..231x87.png";
 
 type gameObject = {
     gameTitle: string;
@@ -81,7 +82,9 @@ export function s() {
             aria-label="React Splide Example"
         >
             <SplideSlide>
-                <p>test1</p>
+                <picture>
+                    <img src="../img/231x87.png" alt="placeholder" />
+                </picture>
             </SplideSlide>
             <SplideSlide>
                 <p>test2</p>
