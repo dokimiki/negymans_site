@@ -1,0 +1,54 @@
+/*widthの標準値*/
+$mainWidth: 1500px;
+$maxFont: 3.5rem;
+
+/*Newsのスタイル*/
+.news{
+    width: $mainWidth;
+    margin: 0 auto;
+    
+    /*NwesListのスタイル*/
+    .news-list{
+        .news-container {
+            padding: 50px 0;
+            display: flex;
+            border-bottom: 1px solid #000; 
+            /*左側のコンテンツのスタイル*/
+            .news-title {
+                margin-left: 40px;
+                    width: 35%;
+                    font-size: $maxFont;
+                    font-weight: bold;
+                }
+            /*右側のコンテンツのスタイル*/
+            .news-right-content{
+                margin-left: 70px;
+                width: 40%;
+                /*お知らせの説明のスタイル*/ 
+                .news-explanation {
+                    font-size: $maxFont*0.4;
+                    }
+                /*日付・URLのスタイル*/
+                .news-under-content {
+                    display: flex;
+                    margin-top: 20px;
+                    
+                    /*日付のスタイル*/
+                    .news-date {
+                        font-size: 1.2rem;
+                        color: #000;
+                    }
+                    /*URLのスタイル*/
+                    .news-url{
+                                margin-left: $mainWidth/4;
+                    }
+                    /*URLのスタイル*/
+                    
+                }
+            }
+            
+        }
+    }
+}
+
+
