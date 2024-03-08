@@ -51,7 +51,9 @@ function NewsList() {
                             <div className="news-under-content">
                                 <p className="news-date">{n.newsDate}</p>
                                 <a href={n.newsUrl} className="url news-url">
-                                    <p>→</p>
+                                    <picture>
+                                        <img src="./img/button_arrow.png" alt="arrow" />
+                                    </picture>
                                 </a>
                             </div>
                         </div>

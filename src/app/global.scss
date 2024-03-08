@@ -34,8 +34,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 10em;
-    height: 2.6em;
+    width: 7em;
+    height: 2.2em;
     border: 0.13em solid #111111;
     border-radius: 2em;
     background-color: transparent;
@@ -55,9 +55,12 @@
 }
 
 /* ボタンの上にマウスを持ってきたとき */
-.url:hover p {
+.url:hover p{
     color: #fff;
     transition: 0.6s ease all;
+}
+.url:hover img{
+    filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg) brightness(107%) contrast(101%);
 }
 .url:before {
     content: '';
@@ -78,6 +81,6 @@
     transform: scale(4.2);
 }
 a:active {
-    background-color: #2e2e2e;
+    background-color: #555555;
 }
 /************************************************************///ここまで
