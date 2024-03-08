@@ -10,24 +10,24 @@
     -webkit-backdrop-filter: blur(11.3px);
 }
 
+/* 文字の後ろについている青色の背景 */
 .text-blue-bg{
-    /* 文字の後ろについている青色の背景 */
     display: inline-block;
-    line-height: 1.3em;
-    padding-left:0.06em;
-    padding-right:0.06em;
+    line-height: 8rem;
+    padding-left:1.6rem;
+    padding-right:1.6rem;
     background: #70E5FF;
-    font-size: 4rem;
     font-weight: bolder;
 }
 
+/* 文字を枠線だけにする */
 .text-facing{
-    /* 文字を枠線だけにする */
-    font-size: 2rem;
+    letter-spacing: -2px;
     font-weight: bold;
     color: transparent;
-    -webkit-text-stroke: 0.02em #111111;
+    -webkit-text-stroke: 0.16rem #111111;
 }
+
 
 /* ボタンのスタイル中心から黒くなる *////////////////
 .url {
@@ -53,6 +53,7 @@
         font-size: 2rem;
     }
 }
+
 /* ボタンの上にマウスを持ってきたとき */
 .url:hover p {
     color: #fff;
