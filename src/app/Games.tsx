@@ -14,6 +14,15 @@ export default function Games() {
                 <h2 className="text-blue-bg">作ったゲーム</h2>
             </div>
             {GamesList()}
+            <div className="splide">
+                <div className="splide__track">
+                    <ul className="splide__list">
+                        <li className="splide__slide">1</li>
+                        <li className="splide__slide">2</li>
+                        <li className="splide__slide">3</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     );
 }
@@ -43,6 +52,7 @@ function GamesList() {
     return (
         <>
             <ul>
+                <h1>{gameList[0].gameTitle}</h1>
                 {gameList.map((n) => (
                     <li key={1}>
                         <p>{n.gameImage}</p>
@@ -57,3 +67,17 @@ function GamesList() {
         </>
     );
 }
+
+const options = {
+    perMove: 1,
+    gap: 16,
+    cover: true,
+    heightRatio: 0.5,
+    updateOnMove: true,
+    padding: "5rem",
+    type: "loop",
+    focus: "center",
+};
+
+const splide = new Splide(".splide", options);
+splide.mount();
