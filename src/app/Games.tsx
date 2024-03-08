@@ -1,5 +1,6 @@
+import React from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
-import "@splidejs/react-splide/css";
+import "@splidejs/splide/dist/css/splide.min.css";
 type gameObject = {
     gameTitle: string;
     explanation: string;
@@ -16,15 +17,6 @@ export default function Games() {
                 <h2 className="text-blue-bg">作ったゲーム</h2>
             </div>
             {GamesList()}
-            <div className="splide">
-                <div className="splide__track">
-                    <ul className="splide__list">
-                        <li className="splide__slide">1</li>
-                        <li className="splide__slide">2</li>
-                        <li className="splide__slide">3</li>
-                    </ul>
-                </div>
-            </div>
         </div>
     );
 }
@@ -70,16 +62,18 @@ function GamesList() {
     );
 }
 
-const options = {
-    perMove: 1,
-    gap: 16,
-    cover: true,
-    heightRatio: 0.5,
-    updateOnMove: true,
-    padding: "5rem",
-    type: "loop",
-    focus: "center",
+const s = () => {
+    return (
+        <Splide options={{ rewind: true }} aria-label="React Splide Example">
+            <SplideSlide>
+                <p>test1</p>
+            </SplideSlide>
+            <SplideSlide>
+                <p>test2</p>
+            </SplideSlide>
+        </Splide>
+    );
 };
 
-const splide = new Splide(".splide", options);
-splide.mount();
+//const splide = new Splide(".splide", options);
+//splide.mount();
