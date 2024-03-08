@@ -1,6 +1,8 @@
+"use client";
 import React from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
+
 type gameObject = {
     gameTitle: string;
     explanation: string;
@@ -8,7 +10,7 @@ type gameObject = {
     gameImage: string;
 };
 
-// お知らせのコンテンツ表示
+// ゲーム表示
 export default function Games() {
     return (
         <div className="news">
@@ -17,6 +19,7 @@ export default function Games() {
                 <h2 className="text-blue-bg">作ったゲーム</h2>
             </div>
             {GamesList()}
+            {s()}
         </div>
     );
 }
@@ -62,9 +65,21 @@ function GamesList() {
     );
 }
 
-const s = () => {
+export function s() {
     return (
-        <Splide options={{ rewind: true }} aria-label="React Splide Example">
+        <Splide
+            options={{
+                perMove: 1,
+                gap: 16,
+                cover: true,
+                heightRatio: 0.5,
+                updateOnMove: true,
+                padding: "5rem",
+                type: "loop",
+                focus: "center",
+            }}
+            aria-label="React Splide Example"
+        >
             <SplideSlide>
                 <p>test1</p>
             </SplideSlide>
@@ -73,7 +88,7 @@ const s = () => {
             </SplideSlide>
         </Splide>
     );
-};
+}
 
 //const splide = new Splide(".splide", options);
 //splide.mount();
