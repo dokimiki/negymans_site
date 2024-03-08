@@ -32,19 +32,19 @@ function GameList() {
             explanation:
                 "Stet amet ipsum amet diam lorem nulla sit tempor. Molestie suscipit takimata duis sed est elitr duis nulla sit diam stet ipsum et justo suscipit. Lorem vel takimata aliquyam justo et kasd dolor nonummy. Stet invidunt elitr ut dolores exerci ipsum nibh elitr dolor dolor praesent. Magna dign",
             gameUrl: "https://www.negymans.com/",
-            gameImage: "https://placehold.jp/1920x1080.png",
+            gameImage: "./img/game1.png",
         },
         {
             gameTitle: "Apex Legends",
             explanation: "すばらしいゲーム",
             gameUrl: "https://www.negymans.com/",
-            gameImage: "https://placehold.jp/1920x1080.png",
+            gameImage: "./img/game2.png",
         },
         {
             gameTitle: "松下の分岐型ゲーム",
             explanation: "ゲームを作ったよ",
             gameUrl: "https://www.negymans.com/",
-            gameImage: "https://placehold.jp/1920x1080.png",
+            gameImage: "./img/game3.png",
         },
     ];
     return (
