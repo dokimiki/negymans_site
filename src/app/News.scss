@@ -57,6 +57,12 @@ $maxFont: 3.5rem;
                     /*URLのスタイル*/
                     .news-url{
                         margin-left: auto;
+                        width: 7em;
+                        height: 2.2em;
+                    }
+                    .news-url::before{
+                        width: 5em;
+                        height: 5em;
                     }
                     /*URLのスタイル*/
                     
