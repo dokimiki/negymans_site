@@ -19,11 +19,12 @@ $maxFont: 3.5rem;
             text-align: center;
         }
     }
-    .splide {
+    .root-splide {
         margin-top: 5%;
+        width: 150vh;
         .game-list {
             .game-img {
-                width: 100vh;
+                height: 50vh;
                 margin: 0 auto;
                 border-radius: 30px;
                 box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
@@ -37,24 +38,32 @@ $maxFont: 3.5rem;
                     margin-top: 5%;
                     margin-left: 13%;
                 }
-                p{
-                    font-weight: bold;
-                    margin-left: 20%;
-                }
-                .games-url{
-                    display: flex;
-                    width: 16vh;
-                    height: 5vh;
-                    margin-top: 20px;
-                    margin-left: 60%;
-                    p {
-                        margin :0;
-                        font-size: 1rem;
+                .games-text{
+
+                    p{
                         font-weight: bold;
-                        margin-right: 2px;
-                    
+                        margin-left: 20%;
+                    }
+                    .games-url{
+                        display: flex;
+                        align-items: center;
+                        width: 16vh;
+                        height: 5vh;
+                        margin-top: 3%;
+                        margin-left: 80%;
+                        p {
+                            margin :0;
+                            font-size: 1rem;
+                            font-weight: bold;
+                            margin-right: 2%;
                         }
+                    }
+                    .games-url::before{
+                        width: 15em;
+                        height: 9em;
+                    }
                 }
+
 
             }
 
@@ -64,3 +73,13 @@ $maxFont: 3.5rem;
 
 }
 
+.splide__arrow–prev{
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 5vh;
+    height: 5vh;
+    img{
+        width: 2vh;
+    }
+}

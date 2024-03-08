@@ -36,13 +36,16 @@ function GameList() {
         },
         {
             gameTitle: "Apex Legends",
-            explanation: "すばらしいゲーム",
+            explanation:
+                "Stet amet ipsum amet diam lorem nulla sit tempor. Molestie suscipit takimata duis sed est elitr duis nulla sit diam stet ipsum et justo suscipit. Lorem vel takimata aliquyam justo et kasd dolor nonummy. Stet invidunt elitr ut dolores exerci ipsum nibh elitr dolor dolor praesent. Magna dign",
+
             gameUrl: "https://www.negymans.com/",
             gameImage: "./img/game2.png",
         },
         {
             gameTitle: "松下の分岐型ゲーム",
-            explanation: "ゲームを作ったよ",
+            explanation:
+                "Stet amet ipsum amet diam lorem nulla sit tempor. Molestie suscipit takimata duis sed est elitr duis nulla sit diam stet ipsum et justo suscipit. Lorem vel takimata aliquyam justo et kasd dolor nonummy. Stet invidunt elitr ut dolores exerci ipsum nibh elitr dolor dolor praesent. Magna dign",
             gameUrl: "https://www.negymans.com/",
             gameImage: "./img/game3.png",
         },
@@ -52,16 +55,17 @@ function GameList() {
             <Splide
                 options={{
                     perMove: 1,
-                    gap: 19,
+                    gap: 10,
                     cover: true,
                     heightRatio: 1,
                     height: "90vh",
                     updateOnMove: true,
-                    padding: "15rem",
+                    padding: "5rem",
                     type: "loop",
                     focus: "center",
                 }}
                 aria-label="React Splide Example"
+                className="root-splide"
             >
                 {gameList.map((n) => (
                     <SplideSlide key={1} className="game-list">
@@ -70,7 +74,7 @@ function GameList() {
                         </picture>
                         <div className="games-container">
                             <h3>{n.gameTitle}</h3>
-                            <div>
+                            <div className="games-text">
                                 <p>{n.explanation}</p>
                                 <a href={n.gameUrl} className="url games-url">
                                     <p>公式サイトへ</p>
