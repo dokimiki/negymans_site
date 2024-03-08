@@ -41,19 +41,21 @@ $maxFont: 3.5rem;
                     font-weight: bold;
                     margin-left: 20%;
                 }
-                a{
-                    margin-left: 50%;
-                }
                 .games-url{
+                    display: flex;
+                    width: 16vh;
+                    height: 5vh;
                     margin-top: 20px;
-                    margin-left: 80%;
+                    margin-left: 60%;
+                    p {
+                        margin :0;
+                        font-size: 1rem;
+                        font-weight: bold;
+                        margin-right: 2px;
+                    
+                        }
                 }
-                .games-url p{
-                    font-size: 1rem;
-                    font-weight: bold;
-                    margin: 0 auto;
 
-                }
             }
 
         }
