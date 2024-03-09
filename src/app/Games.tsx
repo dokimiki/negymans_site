@@ -35,7 +35,7 @@ function GameList() {
             gameImage: "./img/game1.png",
         },
         {
-            gameTitle: "Apex Legends",
+            gameTitle: "ダミータイトル1",
             explanation:
                 "Stet amet ipsum amet diam lorem nulla sit tempor. Molestie suscipit takimata duis sed est elitr duis nulla sit diam stet ipsum et justo suscipit. Lorem vel takimata aliquyam justo et kasd dolor nonummy. Stet invidunt elitr ut dolores exerci ipsum nibh elitr dolor dolor praesent. Magna dign",
 
@@ -43,7 +43,7 @@ function GameList() {
             gameImage: "./img/game2.png",
         },
         {
-            gameTitle: "松下の分岐型ゲーム",
+            gameTitle: "ダミータイトル2",
             explanation:
                 "Stet amet ipsum amet diam lorem nulla sit tempor. Molestie suscipit takimata duis sed est elitr duis nulla sit diam stet ipsum et justo suscipit. Lorem vel takimata aliquyam justo et kasd dolor nonummy. Stet invidunt elitr ut dolores exerci ipsum nibh elitr dolor dolor praesent. Magna dign",
             gameUrl: "https://www.negymans.com/",
@@ -54,13 +54,18 @@ function GameList() {
         <>
             <Splide
                 options={{
+                    classes: {
+                        arrow: "splide__arrow custom-arrow",
+                        prev: "splide__arrow--prev custom-prev",
+                        next: "splide__arrow--next custom-next",
+                    },
                     perMove: 1,
-                    gap: 10,
+                    gap: "7em",
                     cover: true,
                     heightRatio: 1,
                     height: "90vh",
                     updateOnMove: true,
-                    padding: "5rem",
+                    padding: "22vw",
                     type: "loop",
                     focus: "center",
                 }}
