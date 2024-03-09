@@ -54,13 +54,18 @@ function GameList() {
         <>
             <Splide
                 options={{
+                    classes: {
+                        arrow: "splide__arrow custom-arrow",
+                        prev: "splide__arrow--prev custom-prev",
+                        next: "splide__arrow--next custom-next",
+                    },
                     perMove: 1,
-                    gap: 10,
+                    gap: 5,
                     cover: true,
                     heightRatio: 1,
                     height: "90vh",
                     updateOnMove: true,
-                    padding: "5rem",
+                    padding: "20rem",
                     type: "loop",
                     focus: "center",
                 }}
