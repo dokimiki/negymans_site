@@ -21,7 +21,7 @@ $maxFont: 3.5rem;
     }
     .root-splide {
         margin-top: 5%;
-        width: 150vh;
+        width: 170vh;
         .game-list {
             .game-img {
                 height: 50vh;
@@ -73,13 +73,7 @@ $maxFont: 3.5rem;
 
 }
 
-.splide__arrow–prev{
-    left: 0;
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-    width: 5vh;
-    height: 5vh;
-    img{
-        width: 2vh;
-    }
+.splide__arrow{
+    margin: -15vh 33vh;
+    
 }
