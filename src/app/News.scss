@@ -3,74 +3,70 @@ $mainWidth: 1500px;
 $maxFont: 3.5rem;
 
 /*Newsのスタイル*/
-.news{
+.news {
     width: 70em;
     margin: 0 auto;
     font-size: 1vw;
 
     /*NEWSのスタイル*/
-    .sub-heading{
+    .sub-heading {
         font-size: 2em;
         margin-bottom: -0.2em;
         margin-left: 0.8em;
     }
 
     /*お知らせのスタイル*/
-    .main-heading{
+    .main-heading {
         font-size: 3.6em;
         margin-bottom: 1.6em;
     }
-    
+
     /*NwesListのスタイル*/
-    .news-list{
+    .news-list {
         .news-container {
             padding: 2.4em 2em;
             display: flex;
-            border-bottom: 0.11em solid #111111; 
+            border-bottom: 0.11em solid #111e;
             /*左側のコンテンツのスタイル*/
             .news-title {
                 margin-left: 40px;
-                    width: 35%;
-                    font-size: 2.3em;
-                    font-weight: bold;
-                }
+                width: 35%;
+                font-size: 2.3em;
+                font-weight: bold;
+            }
             /*右側のコンテンツのスタイル*/
-            .news-right-content{
+            .news-right-content {
                 margin-left: 4em;
                 width: 42em;
-                /*お知らせの説明のスタイル*/ 
+                /*お知らせの説明のスタイル*/
                 .news-explanation {
                     font-size: 1.2rem;
-                    }
+                }
                 /*日付・URLのスタイル*/
                 .news-under-content {
                     display: flex;
-                    margin-top:0.2em;
+                    margin-top: 0.2em;
                     margin-bottom: 0.2em;
                     font-size: 5vw;
-                    
+
                     /*日付のスタイル*/
                     .news-date {
                         font-size: 1.2rem;
                         color: #666666;
                     }
                     /*URLのスタイル*/
-                    .news-url{
+                    .link-button {
                         margin-left: auto;
                         width: 7em;
                         height: 2.2em;
                     }
-                    .news-url::before{
+                    .link-button::before {
                         width: 5em;
                         height: 5em;
                     }
                     /*URLのスタイル*/
-                    
                 }
             }
-            
         }
     }
 }
-
-

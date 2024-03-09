@@ -5,111 +5,167 @@
 .glass-bg {
     /* From https://css.glass */
     background: rgba(198, 198, 198, 0.34);
-    //box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    // box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
     padding: 1.2rem 0;
-    border-bottom: 1px solid #111;
+    // border-bottom: 1px solid #111;
+}
 
-    .negymans-rogo{
+header {
+    .negymans-logo {
         margin-left: 2.4rem;
     }
 
-    .header-right-content{
+    .header-right-content {
         font-size: 3vw;
-
-
-        .negymans-button{
+        .negymans-button {
             width: 27em;
             height: 4.8em;
             margin-right: 2em;
-        }.negymans-button:before{
-            width: 10em;
-            height: 10em;
+
+            &:before {
+                width: 10em;
+                height: 10em;
+            }
         }
 
-
-        .contents-button{
+        .contents-button {
             width: 18em;
             height: 4.8em;
             margin-right: 4em;
-        }.contents-button:before{
-            width: 10em;
-            height: 10em;
+
+            &:before {
+                width: 10em;
+                height: 10em;
+            }
         }
     }
 }
 
 /* 文字の後ろについている青色の背景 */
-.text-blue-bg{
+.text-blue-bg {
     display: inline-block;
     line-height: 1.3em;
-    padding-left:0.5em;
-    padding-right:0.46em;
-    background: #70E5FF;
+    padding-left: 0.5em;
+    padding-right: 0.46em;
+    background: #70e5ff;
     font-weight: bolder;
 }
 
 /* 文字を枠線だけにする */
-.text-facing{
+.text-facing {
     letter-spacing: -2px;
     font-weight: bold;
     color: transparent;
-    -webkit-text-stroke: 0.05em #111111;
+    -webkit-text-stroke: 0.05em #111e;
 }
 
-
-/* ボタンのスタイル中心から黒くなる *////////////////
-.url {
+.link-button {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 0.13em solid #111111;
     border-radius: 10em;
-    background-color: transparent;
     position: relative;
     letter-spacing: 0.05em;
     font-size: 0.16em;
     transition: initial;
     overflow: hidden;
     text-decoration: none;
+    transition: 0.5s ease all;
+
+    /* カラーリング */
+    &.transparent-button {
+        border: 0.13em solid #111e;
+        background: transparent;
+
+        a:active {
+            background: #555555;
+        }
+
+        p {
+            color: #111e;
+        }
+
+        &:before {
+            background: #111e;
+        }
+
+        &:hover {
+            p {
+                color: #fff;
+            }
+
+            .link-button-icon {
+                filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg) brightness(107%) contrast(101%);
+            }
+        }
+    }
+
+    &.black-button {
+        border: none;
+        background: #111e;
+
+        a:active {
+            background: #555555;
+        }
+
+        p {
+            color: #ffffff;
+        }
+
+        &:before {
+            background: #70e5ff;
+        }
+
+        &:hover {
+            p {
+                color: #111e;
+            }
+
+            .link-button-icon {
+                filter: brightness(0);
+            }
+        }
+    }
+
     p {
-        color: #111111;
         font-weight: bold;
         z-index: 1000;
         transition: 0.6s ease all;
         font-size: 1.8em;
     }
-    img{
+
+    .link-button-icon {
+        transition: 0.6s ease all;
         width: 2vh;
     }
-}
 
-/* ボタンの上にマウスを持ってきたとき */
-.url:hover p{
-    color: #fff;
-    transition: 0.6s ease all;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-radius: 50%;
+        margin: auto;
+        transform: scale(0);
+        transition: 0.8s ease all;
+    }
+
+    &:hover {
+        background: transparent;
+        p {
+            transition: 0.6s ease all;
+        }
+
+        .link-button-icon {
+            transition: 0.6s ease all;
+        }
+
+        &:before {
+            transform: scale(4.2);
+        }
+    }
 }
-.url:hover img{
-    filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg) brightness(107%) contrast(101%);
-}
-.url:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    border-radius: 50%;
-    margin: auto;
-    background: #111111;
-    transform: scale(0);
-    transition: 0.8s ease all;
-}
-.url:hover:before {
-    transform: scale(4.2);
-}
-a:active {
-    background-color: #555555;
-}
-/************************************************************///ここまで

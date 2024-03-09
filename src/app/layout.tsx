@@ -23,12 +23,12 @@ export default function RootLayout({
     <html lang="ja">
       <body className={notoSansJP.className}>
         <header className="glass-bg sticky inset-0 flex flex-row justify-between">
-          <div><Image className="negymans-rogo" src="/img/NEGYMANS.svg" alt="NEGYMANS" width={270} height={270} /></div>
+          <div><Image className="negymans-logo" src="/img/NEGYMANS.svg" alt="NEGYMANS" width={270} height={270} /></div>
           <div className="flex flex-row">
             <nav>
               <ul className="header-right-content flex flex-row">
-                <li><a className="url negymans-button" href=""><p>NEGYMANSとは</p></a></li>
-                <li><a className="url contents-button" href=""><p>Contents</p></a></li>
+                <li><a className="link-button transparent-button negymans-button" href=""><p>NEGYMANSとは</p></a></li>
+                <li><a className="link-button transparent-button contents-button" href=""><p>Contents</p></a></li>
               </ul>
             </nav>
             <div>三</div>
