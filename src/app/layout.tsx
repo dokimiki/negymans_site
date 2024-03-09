@@ -1,38 +1,42 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Noto_Sans_JP } from "next/font/google";
 
 import "./global.scss";
+import Image from "next/image";
 
-const inter = Inter({ subsets: ["latin"] });
+const notoSansJP = Noto_Sans_JP({
+  subsets: ["latin"],
+  variable: '--font-noto-sans-jp',
+});
 
 export const metadata: Metadata = {
-    title: "NEGYMANS",
-    description: "negymans site",
+  title: "NEGYMANS",
+  description: "negymans site",
 };
 
 export default function RootLayout({
-    children,
+  children,
 }: Readonly<{
-    children: React.ReactNode;
+  children: React.ReactNode;
 }>) {
-    return (
-        <html lang="ja">
-            <body className={inter.className}>
-                <header className="glass-bg sticky inset-0 flex flex-row justify-between">
-                    <div>NEGYMANS</div>
-                    <div className="flex flex-row">
-                        <nav>
-                            <ul className="flex flex-row">
-                                <li>NEGYMANSとは</li>
-                                <li>Contents</li>
-                            </ul>
-                        </nav>
-                        <div>三</div>
-                    </div>
-                </header>
-                {children}
-                <footer></footer>
-            </body>
-        </html>
-    );
+  return (
+    <html lang="ja">
+      <body className={notoSansJP.className}>
+        <header className="glass-bg sticky inset-0 flex flex-row justify-between">
+          <div><Image className="negymans-logo" src="/img/NEGYMANS.svg" alt="NEGYMANS" width={270} height={270} /></div>
+          <div className="flex flex-row">
+            <nav>
+              <ul className="header-right-content flex flex-row">
+                <li><a className="link-button transparent-button negymans-button" href=""><p>NEGYMANSとは</p></a></li>
+                <li><a className="link-button transparent-button contents-button" href=""><p>Contents</p></a></li>
+              </ul>
+            </nav>
+            <div>三</div>
+          </div>
+        </header>
+        {children}
+        <footer></footer>
+      </body>
+    </html>
+  );
 }

@@ -2,27 +2,17 @@
     position: fixed;
     bottom: 15vh;
     right: 3vw;
-    .download-url{
-        background-color: black;
-        width: 20vh;
-        height: 5.5vh;
-        img{
-            width: 7vw;
+
+    font-size: 3vw;
+
+    .link-button {
+        width: 20em;
+        height: 5em;
+        margin-right: 2em;
+
+        &:before {
+            width: 10em;
+            height: 10em;
         }
     }
-    .download-url:hover img{
-        filter: brightness(0);
-    }
-    .download-url:before{
-        background: #70E5FF;
-        width: 19em;
-        height: 10em;
-        border: #70E5FF 0.13em solid;
-    }
-    .download-url:hover:before{
-        color: #70E5FF;
-        border: 0.13em solid #70E5FF;
-    }
-    
-
 }
