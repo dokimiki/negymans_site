@@ -11,12 +11,17 @@ export default function Home() {
     return (
         <main>
             <FirstView />
-            <BrowserView>
-                <DownloadButton />
-            </BrowserView>
+            {MobileBoolean()}
             <News />
             <About />
             <Games />
         </main>
     );
+}
+
+function MobileBoolean() {
+    if (!isMobile) {
+        return <DownloadButton />;
+    }
+    return <></>;
 }
