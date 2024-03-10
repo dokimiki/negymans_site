@@ -45,7 +45,27 @@ export default function RootLayout({
     </div>*/}
                 </header>
                 {children}
-                <footer></footer>
+                <footer className="footer">
+                    <ul>
+                        <li className="footer-content">
+                            <p>YouTube </p>
+                            <a href="https://www.youtube.com/@NEGYMANS">https://www.youtube.com/@NEGYMANS</a>
+                        </li>
+                        <li className="footer-content">
+                            <p>X(旧Twitter) </p>
+                            <a href="https://twitter.com/NEGYMANS">https://twitter.com/NEGYMANS</a>
+                        </li>
+                        <li className="footer-content">
+                            <p>Discord </p>
+                            <a href="https://discord.gg/zjqgc8bnCM">https://discord.gg/zjqgc8bnCM</a>
+                        </li>
+                        <li className="footer-content">
+                            <p>Soundcoud </p>
+                            <a href="https://soundcloud.com/negimans">https://soundcloud.com/negimans</a>
+                        </li>
+                    </ul>
+                    <small className="copy-right">© 2023 NEGYMANS</small>
+                </footer>
             </body>
         </html>
     );
