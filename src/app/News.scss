@@ -71,3 +71,130 @@ $maxFont: 3.5rem;
         }
     }
 }
+
+/*タブレット用*/
+@media screen and (max-width:959px){
+    .news {
+        width: 100%;
+        .heading{
+            margin-left: 10em;
+        
+            .sub-heading {
+                font-size: 3.5em;
+                margin-bottom: -0.2em;
+                margin-left: 0.8em;
+            }
+            .main-heading {
+                font-size: 6em;
+                margin-bottom: 0.5em;
+            }
+        }
+        .news-list {
+            .news-container {
+                padding: 2.4em 2em 1em 2.4em;
+                display: flex;
+                width: 80vw;
+                margin: 0 auto;
+                .news-title {
+                    margin-left: 40px;
+                    width: 22em;
+                    font-size: 3em;
+                }
+                .news-right-content {
+                    margin: none;
+                    width: 70em;
+                    .news-explanation {
+                        margin-top: 0.5em;
+                        font-size: 1rem;
+                    }
+                    .news-under-content {
+                        display: flex;
+                        margin-top: 0.2em;
+                        margin-bottom: none;
+                        font-size: 5vw;
+                        .news-date {
+                            font-size: .9rem;
+                            color: #666666;
+                        }
+                        .link-button {
+                            margin-left: auto;
+                            width: 13em;
+                            height:5em;
+                            .link-button-icon{
+                                width: 2.5vw;
+                            }
+                        }
+                        .link-button::before {
+                            width: 5em;
+                            height: 5em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*スマホ用*/
+@media screen and (max-width :480px) {
+    .news {
+        width: 100%;
+        .heading{
+            margin-left: 10em;
+        
+            .sub-heading {
+                font-size: 4.5em;
+                margin-bottom: -0.2em;
+                margin-left: 0.8em;
+            }
+            .main-heading {
+                font-size: 8em;
+                margin-bottom: 0.5em;
+            }
+        }
+        .news-list {
+            .news-container {
+                padding: 2.4em 2em 1em 2.4em;
+                display: flex;
+                flex-direction: column;
+                width: 80vw;
+                margin: 0 auto;
+                .news-title {
+                    margin-left: 40px;
+                    width: 11em;
+                    font-size: 6em;
+                }
+                .news-right-content {
+                    margin: none;
+                    width: 70em;
+                    .news-explanation {
+                        margin-top: 0.5em;
+                        font-size: 1rem;
+                    }
+                    .news-under-content {
+                        display: flex;
+                        margin-top: 0.2em;
+                        margin-bottom: none;
+                        font-size: 5vw;
+                        .news-date {
+                            font-size: 0.8rem;
+                            color: #666666;
+                        }
+                        .link-button {
+                            margin-left: auto;
+                            width: 15em;
+                            height:6em;
+                            .link-button-icon{
+                                width: 3vw;
+                            }
+                        }
+                        .link-button::before {
+                            width: 5em;
+                            height: 5em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
