@@ -5,13 +5,13 @@
     bottom: 15vh;
     right: 3vw;*/
 
-    height: 25vh;
     width: 1200px;
     font-size: 3vw;
 
-    margin: 0 auto;
     
-    h2{
+    margin: 30vh auto;//元に戻すとき削除
+    
+    h2{//元に戻すとき削除
         font-size: 2vw;
         font-weight: bolder;
         text-align: center;
@@ -22,20 +22,71 @@
     }
 
     .link-button {
+        //固定にするために仮でコメントアウト
         //width: 20em;
         //height: 5em;
         margin-right: 2em;
 
-        width: 40em;
-        height: 8em;
-        margin: 3em auto 0 auto;
+        width: 40em;//元に戻すとき削除
+        height: 8em;//元に戻すとき削除
+        margin: 3em auto 0 auto;//元に戻すとき削除
 
         &:before {
             width: 10em;
             height: 10em;
         }
+
+        //固定にするために仮でコメントアウト
         .link-button-icon{
             width: 3vh;
+        }
+    }
+}
+
+/* タブレット用 */
+@media screen and (max-width:959px){
+    .download-button {
+        width: 100%;
+        margin: 10vh auto;
+        h2{
+            font-size: 3vw;
+        }
+        p{
+            font-size: 1.7vw;
+            font-weight: bold;
+        }
+        .link-button {
+            width: 50em;
+            height: 13em;
+            margin: 3em auto 0 auto;
+        
+            .link-button-icon{
+                width: 2vh;
+            }
+        }
+    }
+}
+
+/* スマホ用 */
+@media screen and (max-width :480px) {
+    .download-button {
+        width: 100%;
+        margin: 7vh auto;
+        h2{
+            font-size: 3vw;
+        }
+        p{
+            font-size: 1.7vw;
+            font-weight: bold;
+        }
+        .link-button {
+            width: 50em;
+            height: 13em;
+            margin: 3em auto 0 auto;
+        
+            .link-button-icon{
+                width: 1.5vh;
+            }
         }
     }
 }
