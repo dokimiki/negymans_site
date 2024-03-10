@@ -81,10 +81,10 @@ function GameList() {
                             <h3>{n.gameTitle}</h3>
                             <div className="games-text">
                                 <p>{n.explanation}</p>
-                                <a href={n.gameUrl} className="url games-url">
+                                <a href={n.gameUrl} className="link-button transparent-button games-url">
                                     <p>公式サイトへ</p>
                                     <picture>
-                                        <img src="./img/button_arrow.png" alt="arrow" />
+                                        <img src="./img/button_arrow.png" alt="arrow" className="link-button-icon" />
                                     </picture>
                                 </a>
                             </div>
