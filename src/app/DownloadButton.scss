@@ -1,18 +1,41 @@
+;
 .download-button {
-    position: fixed;
+    /* 固定にするために仮でコメントアウト 
+    position: absolute;
     bottom: 15vh;
-    right: 3vw;
+    right: 3vw;*/
 
+    height: 25vh;
+    width: 1200px;
     font-size: 3vw;
 
+    margin: 0 auto;
+    
+    h2{
+        font-size: 2vw;
+        font-weight: bolder;
+        text-align: center;
+    }
+    p{
+        font-size: 1.2vw;
+        margin-right: 0.5vw;
+    }
+
     .link-button {
-        width: 20em;
-        height: 5em;
+        //width: 20em;
+        //height: 5em;
         margin-right: 2em;
+
+        width: 40em;
+        height: 8em;
+        margin: 3em auto 0 auto;
 
         &:before {
             width: 10em;
             height: 10em;
+        }
+        .link-button-icon{
+            width: 3vh;
         }
     }
 }

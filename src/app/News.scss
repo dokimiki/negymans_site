@@ -24,8 +24,9 @@ $maxFont: 3.5rem;
     /*NwesListのスタイル*/
     .news-list {
         .news-container {
-            padding: 2.4em 2em;
+            padding: 2.4em 2em 1em 2.4em;
             display: flex;
+            align-items: center;
             border-bottom: 0.11em solid #111e;
             /*左側のコンテンツのスタイル*/
             .news-title {
@@ -46,7 +47,7 @@ $maxFont: 3.5rem;
                 .news-under-content {
                     display: flex;
                     margin-top: 0.2em;
-                    margin-bottom: 0.2em;
+                    margin-bottom: none;
                     font-size: 5vw;
 
                     /*日付のスタイル*/

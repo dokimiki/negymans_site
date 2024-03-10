@@ -28,25 +28,24 @@ export default function Games() {
 function GameList() {
     const gameList: gameObject[] = [
         {
-            gameTitle: "GOTSIMULATOR",
+            gameTitle: "GOT SIMULATOR",
             explanation:
-                "Stet amet ipsum amet diam lorem nulla sit tempor. Molestie suscipit takimata duis sed est elitr duis nulla sit diam stet ipsum et justo suscipit. Lorem vel takimata aliquyam justo et kasd dolor nonummy. Stet invidunt elitr ut dolores exerci ipsum nibh elitr dolor dolor praesent. Magna dign",
-            gameUrl: "https://www.negymans.com/",
+                "初音ミクが地球を侵略するアクションゲームです。 髪を伸ばしたり、建物を破壊したり。 あなたの思い通りにこの世界を支配しましょう！",
+            gameUrl: "https://store.steampowered.com/app/2856870/GOT_Simulator/",
             gameImage: "./img/game1.png",
         },
         {
-            gameTitle: "ダミータイトル1",
+            gameTitle: "GOT SIMULATOR",
             explanation:
-                "Stet amet ipsum amet diam lorem nulla sit tempor. Molestie suscipit takimata duis sed est elitr duis nulla sit diam stet ipsum et justo suscipit. Lorem vel takimata aliquyam justo et kasd dolor nonummy. Stet invidunt elitr ut dolores exerci ipsum nibh elitr dolor dolor praesent. Magna dign",
-
-            gameUrl: "https://www.negymans.com/",
+                "初音ミクが地球を侵略するアクションゲームです。 髪を伸ばしたり、建物を破壊したり。 あなたの思い通りにこの世界を支配しましょう！",
+            gameUrl: "https://store.steampowered.com/app/2856870/GOT_Simulator/",
             gameImage: "./img/game2.png",
         },
         {
-            gameTitle: "ダミータイトル2",
+            gameTitle: "GOT SIMULATOR",
             explanation:
-                "Stet amet ipsum amet diam lorem nulla sit tempor. Molestie suscipit takimata duis sed est elitr duis nulla sit diam stet ipsum et justo suscipit. Lorem vel takimata aliquyam justo et kasd dolor nonummy. Stet invidunt elitr ut dolores exerci ipsum nibh elitr dolor dolor praesent. Magna dign",
-            gameUrl: "https://www.negymans.com/",
+                "初音ミクが地球を侵略するアクションゲームです。 髪を伸ばしたり、建物を破壊したり。 あなたの思い通りにこの世界を支配しましょう！",
+            gameUrl: "https://store.steampowered.com/app/2856870/GOT_Simulator/",
             gameImage: "./img/game3.png",
         },
     ];
@@ -81,10 +80,10 @@ function GameList() {
                             <h3>{n.gameTitle}</h3>
                             <div className="games-text">
                                 <p>{n.explanation}</p>
-                                <a href={n.gameUrl} className="url games-url">
-                                    <p>公式サイトへ</p>
+                                <a href={n.gameUrl} className="link-button transparent-button games-url">
+                                    <p>Steamへ</p>
                                     <picture>
-                                        <img src="./img/button_arrow.png" alt="arrow" />
+                                        <img src="./img/button_arrow.png" alt="arrow" className="link-button-icon" />
                                     </picture>
                                 </a>
                             </div>

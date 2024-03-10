@@ -8,10 +8,10 @@ export default function Home() {
     return (
         <main>
             <FirstView />
+            <DownloadButton />
             <News />
             <About />
             <Games />
-            <DownloadButton />
         </main>
     );
 }

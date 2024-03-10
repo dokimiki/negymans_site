@@ -26,35 +26,35 @@ function NewsList() {
     //お知らせのデータ
     const newsList: newsObject[] = [
         {
-            newsTitle: "NEGYMANSのWebサイトを公開",
-            newsExplanation:
-                "Stet amet ipsum amet diam lorem nulla sit tempor. Molestie suscipit takimata duis sed est elitr duis nulla sit diam stet ipsum et justo suscipit. Lorem vel takimata aliquyam justo et kasd dolor nonummy. Stet invidunt elitr ut dolores exerci ipsum nibh elitr dolor dolor praesent. Magna dignissim rebum voluptua ipsum sit dolor nulla at lorem doming vero tempor no et clita. Amet tempor diam sit aliquyam stet sanctus et gubergren iusto sed sed at amet nibh consequat. Sanctus sadipscing nostrud at feugiat imperdiet illum dolore tempor enim. Kasd feugiat erat wisi erat. Sit lorem vero no velit et facilisis kasd eirmod dolor dolor ",
-            newsDate: "2023.3.1",
+            newsTitle: "NEGYMANS結成",
+            newsExplanation: "学校の課題研究でゲーム制作をするためにNEGYMANSが結成されました。",
+            newsDate: "2023.04.01",
             newsUrl: "https://www.negymans.com/",
         },
         {
-            newsTitle: "アリーナ発表",
-            newsExplanation: "先日アリーナで発表会",
-            newsDate: "2023.3.11",
+            newsTitle: "GOT SIMULATOR 発表",
+            newsExplanation: "ゲーム「GOTSIMULATOR」を課題研究発表会で発表しました。",
+            newsDate: "2023.01.15",
             newsUrl: "https://www.negymans.com/",
         },
-        { newsTitle: "GOTSIMULATOR", newsExplanation: "ゲームを作ったよ", newsDate: "2023.3.44", newsUrl: "https://www.negymans.com/" },
+        {
+            newsTitle: "GOT SIMULATOR Steam公開決定",
+            newsExplanation: "ゲーム「GOTSIMULATOR」がSteamで公開されることが決定しました。",
+            newsDate: "2023.03.09",
+            newsUrl: "",
+        },
     ];
     return (
         <>
             <ul className="news-list">
-                {newsList.map((n) => (
+                {newsList.map((_, i, n) => (
                     <li key={1} className="news-container">
-                        <h3 className="news-title">{n.newsTitle}</h3>
+                        <h3 className="news-title">{n[n.length - 1 - i].newsTitle}</h3>
                         <div className="news-right-content">
-                            <p className="news-explanation">{n.newsExplanation}</p>
+                            <p className="news-explanation">{n[n.length - 1 - i].newsExplanation}</p>
                             <div className="news-under-content">
-                                <p className="news-date">{n.newsDate}</p>
-                                <a href={n.newsUrl} className="link-button transparent-button">
-                                    <picture>
-                                        <img src="./img/button_arrow.png" alt="arrow" className="link-button-icon" />
-                                    </picture>
-                                </a>
+                                <p className="news-date">{n[n.length - 1 - i].newsDate}</p>
+                                {urlIndicate(n, i)}
                             </div>
                         </div>
                     </li>
@@ -62,4 +62,19 @@ function NewsList() {
             </ul>
         </>
     );
+}
+
+// URLがある場合はリンクボタンを表示
+function urlIndicate(n: newsObject[], i: number) {
+    if (n[n.length - 1 - i].newsUrl != "") {
+        return (
+            <a href={n[n.length - 1 - i].newsUrl} className="link-button transparent-button">
+                <picture>
+                    <img src="./img/button_arrow.png" alt="arrow" className="link-button-icon" />
+                </picture>
+            </a>
+        );
+    } else {
+        return;
+    }
 }
