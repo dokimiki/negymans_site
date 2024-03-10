@@ -29,18 +29,24 @@ function NewsList() {
             newsTitle: "NEGYMANS結成",
             newsExplanation: "学校の課題研究でゲーム制作をするためにNEGYMANSが結成されました。",
             newsDate: "2023.04.01",
-            newsUrl: "https://www.negymans.com/",
+            newsUrl: "",
         },
         {
             newsTitle: "GOT SIMULATOR 発表",
             newsExplanation: "ゲーム「GOTSIMULATOR」を課題研究発表会で発表しました。",
-            newsDate: "2023.01.15",
-            newsUrl: "https://www.negymans.com/",
+            newsDate: "2024.01.15",
+            newsUrl: "",
         },
         {
             newsTitle: "GOT SIMULATOR Steam公開決定",
             newsExplanation: "ゲーム「GOTSIMULATOR」がSteamで公開されることが決定しました。",
-            newsDate: "2023.03.09",
+            newsDate: "2024.03.09",
+            newsUrl: "",
+        },
+        {
+            newsTitle: "GOT SIMULATOR アリーナ発表",
+            newsExplanation: "課題研究で制作したゲーム「GOTSIMULATOR」を学校のアリーナで全校生徒の前で発表しました。",
+            newsDate: "2024.03.11",
             newsUrl: "",
         },
     ];

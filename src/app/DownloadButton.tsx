@@ -4,7 +4,10 @@ export default function DownloadButton() {
         <>
             <div className="download-button">
                 <h2>GOT SIMULATOR(Windows.ver)のダウンロード</h2>
-                <a href="https://store.steampowered.com/app/2856870/GOT_Simulator/" className="link-button black-button">
+                <a
+                    href="https://github.com/dokimiki/negymans_site/releases/download/v0.1.0/GOT_SIMULATOR.zip"
+                    className="link-button black-button"
+                >
                     <p>ダウンロード</p>
                     <picture>
                         <img src="./img/button_download.png" alt="arrow" className="link-button-icon" />
