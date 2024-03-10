@@ -64,7 +64,7 @@ header {
     -webkit-text-stroke: 0.05em #111e;
 }
 
-/* ボタンのスタイル */
+/* ボタンのスタイル */////////////////////////////////////
 .link-button {
     display: flex;
     align-items: center;
@@ -173,11 +173,36 @@ header {
         }
     }
 }
+//////////////////////////////////////////////////////
+
+.footer{
+    background-color: #111;
+    height: 160px;
+    color: #fff;
+    padding: 20px 0 0 20px;
+    font-size: 1.0rem;
+    .footer-content{
+        display: flex;
+        p{
+            width: 120px;
+            text-align: right;
+            margin-right: 20px;;
+            margin-bottom: 3px;   
+        }
+    }
+    .copy-right{
+        margin-top: 20px;
+        text-align: right;
+    }
+}
+
+    
 
         /* タブレット用 */
         @media screen and (max-width: 959px) {
             .negymans-logo {
                 width: 150px;
+                height: 40px;
             }
         }
     
@@ -185,6 +210,16 @@ header {
         @media screen and (max-width: 480px) {
             .negymans-logo {
                 width: 100px;
+            }
+            .footer{
+                height: 120px;
+                font-size: 0.6rem;
+                .footer-content{
+                    p{
+                        width: 80px;
+                        margin-right: 10px;
+                    }
+                }
             }
     
         }
