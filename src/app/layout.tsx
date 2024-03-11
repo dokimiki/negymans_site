@@ -63,6 +63,10 @@ export default function RootLayout({
                             <p>Soundcoud </p>
                             <a href="https://soundcloud.com/negimans">https://soundcloud.com/negimans</a>
                         </li>
+                        <li className="footer-content">
+                            <p>Instagram </p>
+                            <a href="https://www.instagram.com/negymans">https://www.instagram.com/negymans</a>
+                        </li>
                     </ul>
                     <small className="copy-right">© 2023 NEGYMANS</small>
                 </footer>
