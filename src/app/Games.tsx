@@ -18,7 +18,7 @@ export default function Games() {
         <div id="gameid" className="games">
             <div className="games-heading">
                 <h3 className="text-facing game-sub-title">GAMES</h3>
-                <h2 className="text-blue-bg game-title">作ったゲーム</h2>
+                <h2 className="game-title text-blue-bg">作ったゲーム</h2>
             </div>
             {GameList()}
         </div>

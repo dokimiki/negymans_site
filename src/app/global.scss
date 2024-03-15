@@ -52,9 +52,10 @@ header {
 /* 文字の後ろについている青色の背景 */
 .text-blue-bg {
     display: inline-block;
-    line-height: 1.3em;
-    padding-left: 0.5em;
-    padding-right: 0.46em;
+    line-height: 1.2em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    padding-bottom: 0.1em;
     background: #70e5ff;
     font-weight: bolder;
 }
