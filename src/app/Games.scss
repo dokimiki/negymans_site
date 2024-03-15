@@ -26,7 +26,12 @@ $maxFont: 3.5rem;
          /* 端のスライドを薄く小さくする */
         .splide__slide{
             img {
-                opacity: .3;
+                opacity: .4;
+                transform: scale(.8);
+                transition: .7s;
+            }
+            .games-container{
+                opacity: .4;
                 transform: scale(.8);
                 transition: .7s;
             }
@@ -35,6 +40,11 @@ $maxFont: 3.5rem;
         /* 中央のスライドを普通の色と大きさにする */
         .is-active{
             img{
+                opacity: 1;
+                transform: scale(1);
+                z-index: 1;
+            }
+            .games-container{
                 opacity: 1;
                 transform: scale(1);
                 z-index: 1;
