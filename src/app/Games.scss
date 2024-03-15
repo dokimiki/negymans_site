@@ -19,7 +19,8 @@ $maxFont: 3.5rem;
     }
     .root-splide {
         margin-top: 5%;
-        width: 90vw;
+        width: 100vw;
+        height: 100vh;
         .game-list {
             .game-img {
                 aspect-ratio: 5 / 3;
@@ -46,15 +47,15 @@ $maxFont: 3.5rem;
                     .games-url {
                         display: flex;
                         align-items: center;
-                        width: 16vh;
-                        height: 5vh;
+                        width: 17vh;
+                        height: 4.4vh;
                         margin-top: 2%;
                         margin-left: 80%;
                         p {
                             margin: 0;
                             font-size: 0.8vw;
                             font-weight: bold;
-                            margin-right: 2%;
+                            margin-right: 6%;
                         }
                         img {
                             width: 0.8vw;

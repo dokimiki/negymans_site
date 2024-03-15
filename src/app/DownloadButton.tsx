@@ -8,7 +8,7 @@ export default function DownloadButton() {
                     href="https://github.com/dokimiki/negymans_site/releases/download/v0.1.0/GOT_SIMULATOR.zip"
                     className="link-button black-button"
                 >
-                    <p>ダウンロード</p>
+                    <p>ゲームを遊ぶ</p>
                     <picture>
                         <img src="./img/button_download.png" alt="arrow" className="link-button-icon" />
                     </picture>

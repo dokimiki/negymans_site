@@ -15,7 +15,7 @@ type gameObject = {
 // ゲーム表示
 export default function Games() {
     return (
-        <div className="games">
+        <div id="gameid" className="games">
             <div className="games-heading">
                 <h3 className="text-facing game-sub-title">GAMES</h3>
                 <h2 className="text-blue-bg game-title">作ったゲーム</h2>

@@ -4,11 +4,11 @@
 
 .glass-bg {
     /* From https://css.glass */
-    background: rgba(198, 198, 198, 0.34);
+    background: rgba(225, 225, 225, 0.34);
     // box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
-    padding: 1.2rem 0;
+    padding: 2.8vh 0;
     // border-bottom: 1px solid #111;
 }
 
@@ -17,15 +17,18 @@ header {
 
     .negymans-logo {
         margin-left: 2.4rem;
+        width: 14vw;
     }
 
 
     .header-right-content {
         font-size: 3vw;
+        margin-top: 0.6vh;
+
         .negymans-button {
             width: 27em;
             height: 4.8em;
-            margin-right: 2em;
+            margin-right: 3em;
 
             &:before {
                 width: 10em;

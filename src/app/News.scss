@@ -23,8 +23,9 @@ $maxFont: 3.5rem;
 
     /*NwesListのスタイル*/
     .news-list {
+        margin-bottom: 16em;
         .news-container {
-            padding: 2.4em 2em 1em 2.4em;
+            padding: 5em 2em 3em 2.4em;
             display: flex;
             align-items: center;
             border-bottom: 0.11em solid #111e;
