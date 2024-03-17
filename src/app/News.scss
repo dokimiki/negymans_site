@@ -6,7 +6,7 @@ $maxFont: 3.5rem;
 .news {
     width: 70em;
     margin: 0 auto;
-    font-size: 1dvw;
+    font-size: 1vw;
 
     /*NEWSのスタイル*/
     .sub-heading {
@@ -49,7 +49,7 @@ $maxFont: 3.5rem;
                     display: flex;
                     margin-top: 0.2em;
                     margin-bottom: none;
-                    font-size: 5dvw;
+                    font-size: 5vw;
 
                     /*日付のスタイル*/
                     .news-date {
@@ -94,7 +94,7 @@ $maxFont: 3.5rem;
             .news-container {
                 padding: 2.4em 2em 1em 2.4em;
                 display: flex;
-                width: 80dvw;
+                width: 80vw;
                 margin: 0 auto;
                 .news-title {
                     margin-left: 40px;
@@ -112,7 +112,7 @@ $maxFont: 3.5rem;
                         display: flex;
                         margin-top: 0.2em;
                         margin-bottom: none;
-                        font-size: 5dvw;
+                        font-size: 5vw;
                         .news-date {
                             font-size: 0.9rem;
                             color: #666666;
@@ -122,7 +122,7 @@ $maxFont: 3.5rem;
                             width: 13em;
                             height: 5em;
                             .link-button-icon {
-                                width: 2.5dvw;
+                                width: 2.5vw;
                             }
                         }
                         .link-button::before {
@@ -158,7 +158,7 @@ $maxFont: 3.5rem;
                 padding: 2.4em 2em 1em 2.4em;
                 display: flex;
                 flex-direction: column;
-                width: 80dvw;
+                width: 80vw;
                 margin: 0 auto;
                 .news-title {
                     margin-left: 40px;
@@ -176,7 +176,7 @@ $maxFont: 3.5rem;
                         display: flex;
                         margin-top: 0.2em;
                         margin-bottom: none;
-                        font-size: 5dvw;
+                        font-size: 5vw;
                         .news-date {
                             font-size: 0.8rem;
                             color: #666666;
@@ -186,7 +186,7 @@ $maxFont: 3.5rem;
                             width: 15em;
                             height: 6em;
                             .link-button-icon {
-                                width: 3dvw;
+                                width: 3vw;
                             }
                         }
                         .link-button::before {

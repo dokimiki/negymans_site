@@ -8,12 +8,12 @@ $maxFont: 3.5rem;
         .game-sub-title {
             margin-left: 0.8em;
             margin-bottom: -0.2em;
-            font-size: 2.4dvw;
+            font-size: 2.4vw;
         }
 
         .game-title {
             align-items: center;
-            font-size: 4.4dvw;
+            font-size: 4.4vw;
             font-weight: bolder;
             text-align: center;
         }
@@ -21,7 +21,7 @@ $maxFont: 3.5rem;
     .root-splide {
         margin-top: 5%;
         width: 100%;
-        height: 100dvh;
+        height: 100vh;
 
         /* 端のスライドを薄く小さくする */
         .splide__slide {
@@ -65,7 +65,7 @@ $maxFont: 3.5rem;
                 width: 70%;
                 margin: 0 auto;
                 h3 {
-                    font-size: 2dvw;
+                    font-size: 2vw;
                     font-weight: bolder;
                     margin-top: 5%;
                     margin-left: 13%;
@@ -78,18 +78,18 @@ $maxFont: 3.5rem;
                     .games-url {
                         display: flex;
                         align-items: center;
-                        width: 17dvh;
-                        height: 4.4dvh;
+                        width: 17vh;
+                        height: 4.4vh;
                         margin-top: 2%;
                         margin-left: 80%;
                         p {
                             margin: 0;
-                            font-size: 0.8dvw;
+                            font-size: 0.8vw;
                             font-weight: bold;
                             margin-right: 6%;
                         }
                         img {
-                            width: 0.8dvw;
+                            width: 0.8vw;
                         }
                     }
                     .link-button::before {
@@ -103,10 +103,10 @@ $maxFont: 3.5rem;
 }
 
 .splide__arrow {
-    margin: -15dvh 18dvw;
+    margin: -15vh 18vw;
 }
 .splide {
-    height: 90dvh;
+    height: 90vh;
 }
 
 /*タブレット用*/
@@ -131,7 +131,7 @@ $maxFont: 3.5rem;
         }
         .root-splide {
             margin-top: 5%;
-            width: 90dvw;
+            width: 90vw;
             .game-list {
                 .game-img {
                     aspect-ratio: 5 / 3;
@@ -145,7 +145,7 @@ $maxFont: 3.5rem;
                     width: 90%;
                     margin: 0 auto;
                     h3 {
-                        font-size: 2dvw;
+                        font-size: 2vw;
                         font-weight: bolder;
                         margin-top: 5%;
                         margin-left: 13%;
@@ -159,18 +159,18 @@ $maxFont: 3.5rem;
                         .games-url {
                             display: flex;
                             align-items: center;
-                            width: 10dvh;
-                            height: 3dvh;
+                            width: 10vh;
+                            height: 3vh;
                             margin-top: 2%;
                             margin-left: 80%;
                             p {
                                 margin: 0;
-                                font-size: 1.5dvw;
+                                font-size: 1.5vw;
                                 font-weight: bold;
                                 margin-right: 2%;
                             }
                             img {
-                                width: 1.8dvw;
+                                width: 1.8vw;
                             }
                         }
                         .link-button::before {
@@ -183,10 +183,10 @@ $maxFont: 3.5rem;
         }
     }
     .splide__arrow {
-        margin: -9dvh 12dvw;
+        margin: -9vh 12vw;
     }
     .splide {
-        height: 40dvh;
+        height: 40vh;
     }
 }
 
@@ -212,7 +212,7 @@ $maxFont: 3.5rem;
         }
         .root-splide {
             margin-top: 5%;
-            width: 100dvw;
+            width: 100vw;
             .game-list {
                 .game-img {
                     aspect-ratio: 5 / 3;
@@ -239,18 +239,18 @@ $maxFont: 3.5rem;
                         .games-url {
                             display: flex;
                             align-items: center;
-                            width: 8dvh;
-                            height: 2.6dvh;
+                            width: 8vh;
+                            height: 2.6vh;
                             margin: 0;
                             margin-left: 80%;
                             p {
                                 margin: 0;
-                                font-size: 2dvw;
+                                font-size: 2vw;
                                 font-weight: bold;
                                 margin-right: 2%;
                             }
                             img {
-                                width: 2dvw;
+                                width: 2vw;
                             }
                         }
                         .link-button::before {
@@ -263,9 +263,9 @@ $maxFont: 3.5rem;
         }
     }
     .splide__arrow {
-        margin: -9dvh 5dvw;
+        margin: -9vh 5vw;
     }
     .splide {
-        height: 35dvh;
+        height: 35vh;
     }
 }
