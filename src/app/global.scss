@@ -14,13 +14,13 @@
 
 :root {
     background-color: #c599ff;
-    background-image: radial-gradient(at 96% 70%, hsla(149, 81%, 63%, 1) 0px, transparent 50%),
-        radial-gradient(at 86% 53%, hsla(209, 90%, 69%, 1) 0px, transparent 50%),
-        radial-gradient(at 99% 30%, hsla(226, 81%, 73%, 1) 0px, transparent 50%),
-        radial-gradient(at 99% 40%, hsla(166, 69%, 64%, 1) 0px, transparent 50%),
-        radial-gradient(at 58% 40%, hsla(301, 91%, 60%, 1) 0px, transparent 50%),
-        radial-gradient(at 68% 41%, hsla(74, 90%, 78%, 1) 0px, transparent 50%),
-        radial-gradient(at 74% 50%, hsla(304, 64%, 60%, 1) 0px, transparent 50%);
+    background-image: radial-gradient(at 96% 70%, rgb(249, 247, 195) 0px, transparent 50%),
+        radial-gradient(at 86% 53%, rgb(189, 240, 251) 0px, transparent 50%),
+        radial-gradient(at 99% 30%, rgb(255, 195, 243) 0px, transparent 50%),
+        radial-gradient(at 99% 40%, rgb(193, 182, 247) 0px, transparent 50%),
+        radial-gradient(at 58% 40%, rgb(255, 242, 210) 0px, transparent 50%),
+        radial-gradient(at 68% 41%, rgb(221, 246, 218) 0px, transparent 50%),
+        radial-gradient(at 74% 50%, rgb(199, 245, 252) 0px, transparent 50%);
 }
 
 header {
@@ -145,7 +145,7 @@ header {
 
     p {
         font-weight: bold;
-        z-index: 1000;
+        z-index: 100;
         transition: 0.6s ease all;
         font-size: 1.8em;
     }
