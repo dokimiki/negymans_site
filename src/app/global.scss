@@ -12,6 +12,17 @@
     // border-bottom: 1px solid #111;
 }
 
+:root {
+    background-color: #c599ff;
+    background-image: radial-gradient(at 96% 70%, rgb(249, 247, 195) 0px, transparent 50%),
+        radial-gradient(at 86% 53%, rgb(189, 240, 251) 0px, transparent 50%),
+        radial-gradient(at 99% 30%, rgb(255, 195, 243) 0px, transparent 50%),
+        radial-gradient(at 99% 40%, rgb(193, 182, 247) 0px, transparent 50%),
+        radial-gradient(at 58% 40%, rgb(255, 242, 210) 0px, transparent 50%),
+        radial-gradient(at 68% 41%, rgb(221, 246, 218) 0px, transparent 50%),
+        radial-gradient(at 74% 50%, rgb(199, 245, 252) 0px, transparent 50%);
+}
+
 header {
     z-index: 1000;
 
@@ -19,7 +30,6 @@ header {
         margin-left: 2.4rem;
         width: 14vw;
     }
-
 
     .header-right-content {
         font-size: 3vw;
@@ -68,7 +78,7 @@ header {
     -webkit-text-stroke: 0.04em #111e;
 }
 
-/* ボタンのスタイル */////////////////////////////////////
+/* ボタンのスタイル */ ////////////////////////////////////
 .link-button {
     display: flex;
     align-items: center;
@@ -139,7 +149,7 @@ header {
 
     p {
         font-weight: bold;
-        z-index: 1000;
+        z-index: 100;
         transition: 0.6s ease all;
         font-size: 1.8em;
     }
@@ -179,51 +189,48 @@ header {
 }
 //////////////////////////////////////////////////////
 
-.footer{
+.footer {
     background-color: #111;
     height: 160px;
     color: #fff;
     padding: 20px 0 0 20px;
-    font-size: 1.0rem;
-    .footer-content{
+    font-size: 1rem;
+    .footer-content {
         display: flex;
-        p{
+        p {
             width: 120px;
             text-align: right;
-            margin-right: 20px;;
-            margin-bottom: 3px;   
+            margin-right: 20px;
+            margin-bottom: 3px;
         }
     }
-    .copy-right{
+    .copy-right {
         margin-top: 20px;
         text-align: right;
     }
 }
 
-    
+/* タブレット用 */
+@media screen and (max-width: 959px) {
+    .negymans-logo {
+        width: 150px;
+        height: 40px;
+    }
+}
 
-        /* タブレット用 */
-        @media screen and (max-width: 959px) {
-            .negymans-logo {
-                width: 150px;
-                height: 40px;
+/* スマホ用 */
+@media screen and (max-width: 480px) {
+    .negymans-logo {
+        width: 100px;
+    }
+    .footer {
+        height: 120px;
+        font-size: 0.6rem;
+        .footer-content {
+            p {
+                width: 80px;
+                margin-right: 10px;
             }
         }
-    
-        /* スマホ用 */
-        @media screen and (max-width: 480px) {
-            .negymans-logo {
-                width: 100px;
-            }
-            .footer{
-                height: 120px;
-                font-size: 0.6rem;
-                .footer-content{
-                    p{
-                        width: 80px;
-                        margin-right: 10px;
-                    }
-                }
-            }
-    
-        }
+    }
+}
