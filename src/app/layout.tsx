@@ -26,7 +26,7 @@ export default function RootLayout({
                     <div>
                         <Image className="negymans-logo" src="/img/NEGYMANS.svg" alt="NEGYMANS" width={270} height={270} />
                     </div>
-                    {/* <div className="flex flex-row">
+                    { <div className="flex flex-row">
                         <nav>
                             <ul className="header-right-content flex flex-row">
                                 <li>
@@ -35,14 +35,14 @@ export default function RootLayout({
                                     </a>
                                 </li>
                                 <li>
-                                    <a className="link-button transparent-button contents-button" href="">
-                                        <p>Contents</p>
+                                    <a className="link-button transparent-button contents-button" href="#gameid">
+                                        <p>Games</p>
                                     </a>
                                 </li>
                             </ul>
                         </nav>
-                        <div>三</div>
-    </div>*/}
+                        {/*<div>三</div>*/}
+    </div>}
                 </header>
                 {children}
                 <footer className="footer">
