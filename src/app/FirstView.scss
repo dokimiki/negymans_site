@@ -2,7 +2,7 @@
     margin-top: 18rem;
     margin-right: 3rem;
     text-align: right;
-    font-size: 1vw;
+    font-size: 1dvw;
     .sub-catchcopy {
         margin-right: 0.4em;
         font-size: 3.2em;
@@ -22,11 +22,11 @@
 }
 
 /* タブレット用 */
-@media screen and (max-width:959px){
+@media screen and (max-width: 959px) {
     .catchcopy {
         margin-top: 1rem;
         margin-right: 1rem;
-        font-size: 1.5vw;
+        font-size: 1.5dvw;
         .sub-catchcopy {
             font-size: 2.5em;
         }
@@ -42,11 +42,11 @@
 }
 
 /* スマホ用 */
-@media screen and (max-width :480px){
+@media screen and (max-width: 480px) {
     .catchcopy {
         margin-top: 1rem;
         margin-right: 0.5em;
-        font-size: 1.5vw;
+        font-size: 1.5dvw;
         .sub-catchcopy {
             font-size: 3em;
         }
@@ -59,8 +59,4 @@
             letter-spacing: -1px;
         }
     }
-
 }
-
-
-    

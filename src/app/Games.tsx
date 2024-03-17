@@ -64,7 +64,7 @@ function GameList() {
                     cover: true,
                     heightRatio: 1,
                     updateOnMove: true,
-                    padding: "22vw",
+                    padding: "22dvw",
                     type: "loop",
                     focus: "center",
                 }}
