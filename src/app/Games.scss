@@ -6,20 +6,51 @@ $maxFont: 3.5rem;
         margin-left: 10%;
 
         .game-sub-title {
-            margin-right: 0.4em;
-            font-size: 2.5vw;
+            margin-left: 0.8em;
+            margin-bottom: -0.2em;
+            font-size: 2.4vw;
         }
 
         .game-title {
             align-items: center;
-            font-size: 3vw;
+            font-size: 4.4vw;
             font-weight: bolder;
             text-align: center;
         }
     }
     .root-splide {
         margin-top: 5%;
-        width: 90vw;
+        width: 100vw;
+        height: 100vh;
+
+         /* 端のスライドを薄く小さくする */
+        .splide__slide{
+            img {
+                opacity: .4;
+                transform: scale(.8);
+                transition: .7s;
+            }
+            .games-container{
+                opacity: .4;
+                transform: scale(.8);
+                transition: .7s;
+            }
+        }
+
+        /* 中央のスライドを普通の色と大きさにする */
+        .is-active{
+            img{
+                opacity: 1;
+                transform: scale(1);
+                z-index: 1;
+            }
+            .games-container{
+                opacity: 1;
+                transform: scale(1);
+                z-index: 1;
+            }
+        }
+
         .game-list {
             .game-img {
                 aspect-ratio: 5 / 3;
@@ -29,6 +60,7 @@ $maxFont: 3.5rem;
                 border-radius: 30px;
                 box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
             }
+
             .games-container {
                 width: 70%;
                 margin: 0 auto;
@@ -46,15 +78,15 @@ $maxFont: 3.5rem;
                     .games-url {
                         display: flex;
                         align-items: center;
-                        width: 16vh;
-                        height: 5vh;
+                        width: 17vh;
+                        height: 4.4vh;
                         margin-top: 2%;
                         margin-left: 80%;
                         p {
                             margin: 0;
                             font-size: 0.8vw;
                             font-weight: bold;
-                            margin-right: 2%;
+                            margin-right: 6%;
                         }
                         img {
                             width: 0.8vw;

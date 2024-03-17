@@ -4,11 +4,11 @@
 
 .glass-bg {
     /* From https://css.glass */
-    background: rgba(198, 198, 198, 0.34);
+    background: rgba(225, 225, 225, 0.34);
     // box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
-    padding: 1.2rem 0;
+    padding: 2.8vh 0;
     // border-bottom: 1px solid #111;
 }
 
@@ -17,15 +17,18 @@ header {
 
     .negymans-logo {
         margin-left: 2.4rem;
+        width: 14vw;
     }
 
 
     .header-right-content {
         font-size: 3vw;
+        margin-top: 0.6vh;
+
         .negymans-button {
             width: 27em;
             height: 4.8em;
-            margin-right: 2em;
+            margin-right: 3em;
 
             &:before {
                 width: 10em;
@@ -49,9 +52,10 @@ header {
 /* 文字の後ろについている青色の背景 */
 .text-blue-bg {
     display: inline-block;
-    line-height: 1.3em;
-    padding-left: 0.5em;
-    padding-right: 0.46em;
+    line-height: 1.2em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    padding-bottom: 0.1em;
     background: #70e5ff;
     font-weight: bolder;
 }
@@ -61,7 +65,7 @@ header {
     letter-spacing: -2px;
     font-weight: bold;
     color: transparent;
-    -webkit-text-stroke: 0.05em #111e;
+    -webkit-text-stroke: 0.04em #111e;
 }
 
 /* ボタンのスタイル */////////////////////////////////////
