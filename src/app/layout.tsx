@@ -45,29 +45,59 @@ export default function RootLayout({
     </div>}
                 </header>
                 {children}
-                <footer className="footer">
-                    <ul>
-                        <li className="footer-content">
-                            <p>YouTube </p>
-                            <a href="https://www.youtube.com/@NEGYMANS">https://www.youtube.com/@NEGYMANS</a>
-                        </li>
-                        <li className="footer-content">
-                            <p>X(旧Twitter) </p>
-                            <a href="https://twitter.com/NEGYMANS">https://twitter.com/NEGYMANS</a>
-                        </li>
-                        <li className="footer-content">
-                            <p>Discord </p>
-                            <a href="https://discord.gg/zjqgc8bnCM">https://discord.gg/zjqgc8bnCM</a>
-                        </li>
-                        <li className="footer-content">
-                            <p>Soundcoud </p>
-                            <a href="https://soundcloud.com/negimans">https://soundcloud.com/negimans</a>
-                        </li>
-                        <li className="footer-content">
-                            <p>Instagram </p>
-                            <a href="https://www.instagram.com/negymans">https://www.instagram.com/negymans</a>
-                        </li>
-                    </ul>
+                <footer className="footer flex">
+                    <div>
+                        <Image className="negymans-logo" src="/img/White_NEGYMANS.svg" alt="NEGYMANS" width={270} height={270} />
+                    </div>
+
+                    <div className="footer-right-content">
+
+                        <div className="">
+                            <div className="">
+                                <p>COMPANY</p>
+                                <div className=""></div>
+                            </div>
+
+                            <ul className="flex">
+                                <li className="">
+                                    <a href="">NEGYMANSとは</a>
+                                </li>
+                                <li className="">
+                                    <a href="">作ったゲーム</a>
+                                </li>
+                                <li className="">
+                                    <a href="">GOT SIMULATOR</a>
+                                </li>
+                                <li className="">
+                                    <a href="">お知らせ</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div className="flex">
+                            <p>SNS</p>
+                            <div className="footer-sns-line"></div>
+                        </div>
+
+                        <ul className="footer-sns-under flex">
+                            <li className="footer-content">
+                                <a href="https://www.youtube.com/@NEGYMANS">YouTube</a>
+                            </li>
+                            <li className="footer-content">
+                                <a href="https://twitter.com/NEGYMANS">X(旧Twitter)</a>
+                            </li>
+                            <li className="footer-content">
+                                <a href="https://discord.gg/zjqgc8bnCM">Discord</a>
+                            </li>
+                            <li className="footer-content">
+                                <a href="https://soundcloud.com/negimans">Soundcoud</a>
+                            </li>
+                            <li className="footer-content">
+                                <a href="https://www.instagram.com/negymans">Instagram</a>
+                            </li>
+                        </ul>
+                    </div>
+
                     <small className="copy-right">© 2023 NEGYMANS</small>
                 </footer>
             </body>

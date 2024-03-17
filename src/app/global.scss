@@ -12,6 +12,10 @@
     // border-bottom: 1px solid #111;
 }
 
+:root{
+    scroll-behavior: smooth;
+}
+
 header {
     z-index: 1000;
 
@@ -194,18 +198,33 @@ header {
 
 .footer {
     background-color: #111;
-    height: 160px;
+    height: 40vh;
     color: #fff;
     padding: 20px 0 0 20px;
     font-size: 1rem;
-    .footer-content {
-        display: flex;
-        p {
-            width: 120px;
-            text-align: right;
-            margin-right: 20px;
-            margin-bottom: 3px;
-        }
+
+    .footer-right-content{
+        margin-left: 10vw;
+            p{
+                color: #DDDDDD;
+            }
+
+            .footer-sns-line{
+                width: 1200px;
+                height: 1px;
+                border-radius: 100px;
+                background-color: #DDDDDD;
+                margin: auto 0;
+                margin-left: 1em;
+            }
+
+            .footer-sns-under {
+                margin-top: 4vh;
+                .footer-content{
+                    margin-right: 6vw;
+                    font-weight: bold;
+                }
+            }
     }
     .copy-right {
         margin-top: 20px;
