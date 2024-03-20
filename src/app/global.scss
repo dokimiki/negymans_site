@@ -198,39 +198,60 @@ header {
 
 .footer {
     background-color: #111;
-    height: 40vh;
+    height: 54vh;
     color: #fff;
-    padding: 20px 0 0 20px;
+    padding: 4rem 0 0 3rem;
     font-size: 1rem;
 
     .footer-right-content{
-        margin-left: 10vw;
+        margin-left: 8vw;
             p{
-                color: #DDDDDD;
+                color: #dedede;
             }
 
             .footer-sns-line{
-                width: 1200px;
+                width: 70em;
                 height: 1px;
                 border-radius: 100px;
-                background-color: #DDDDDD;
+                background-color: #dedede;
                 margin: auto 0;
                 margin-left: 1em;
             }
 
-            .footer-sns-under {
-                margin-top: 4vh;
-                .footer-content{
-                    margin-right: 6vw;
-                    font-weight: bold;
-                }
-            }
-    }
-    .copy-right {
-        margin-top: 20px;
-        text-align: right;
+        .footer-content{
+            margin-right: 6vw;
+            font-weight: bold;
+        }
+    
     }
 }
+
+//中央から下線が伸びるアニメーション
+
+.center-under-line{
+	position: relative;
+	text-decoration: none;
+	transition: 0.3s;
+}
+.center-under-line:hover{
+	color: #dedede;
+}
+.center-under-line::before{
+	content: "";
+	position: absolute;
+	left: 50%;
+	bottom: -2px;
+	width: 0;
+	height: 2px;
+	background: #dedede;
+	transition: 0.3s;
+}
+.center-under-line:hover::before{
+	left: 0;
+	width: 100%;
+}
+
+//////////////////////////////////////////////////////
 
 /* タブレット用 */
 @media screen and (max-width: 959px) {
